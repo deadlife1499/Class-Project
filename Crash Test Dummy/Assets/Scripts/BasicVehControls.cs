@@ -2,560 +2,220 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class BasicVehControls : MonoBehaviour
-{
+public class BasicVehControls : MonoBehaviour {
+	[Space(20)]
+	//[Header("Camera")]
 
-    public int bhp;
-    public float torque;
-    public int brakeTorque;
+	[Range(0, 119)]
+	public int minFOV = 55;
+	[Range(0, minFOV)]
+	public int maxFOV = 90;
 
-    public float[] gearRatio;
-    public int currentGear;
+    //[Header("Car Setup")]
+    [Space(10)]
+    [Range(20, 190)]
+    public int maxSpeed = 90; //The maximum speed that the car can reach in km/h.
+    [Range(10, 120)]
+    public int maxReverseSpeed = 45; //The maximum speed that the car can reach while going on reverse in km/h.
+    [Range(1, 10)]
+    public int accelerationMultiplier = 2; // How fast the car can accelerate. 1 is a slow acceleration and 10 is the fastest.
+    [Space(10)]
+    [Range(10, 45)]
+    public int maxSteeringAngle = 27; // The maximum angle that the tires can reach while rotating the steering wheel.
+    [Range(0.1f, 1f)]
+    public float steeringSpeed = 0.5f; // How fast the steering wheel turns.
+    [Space(10)]
+    [Range(100, 600)]
+    public int brakeForce = 350; // The strength of the wheel brakes.
+    [Range(1, 10)]
+    public int decelerationMultiplier = 2; // How fast the car decelerates when the user is not using the throttle.
+    [Range(1, 10)]
+    public int handbrakeDriftMultiplier = 5; // How much grip the car loses when the user hit the handbrake.
+    [Space(10)]
+    public Vector3 bodyMassCenter;
 
-    private WheelCollider FL;
-    private WheelCollider FR;
-    private WheelCollider RL;
-    private WheelCollider RR;
+	[Space(20)]
+	//[Header("Wheels")]
+	[Space(10)]
+	public GameObject frontLeftMesh;
+    public WheelCollider frontLeftCollider;
+    [Space(10)]
+    public GameObject frontRightMesh;
+    public WheelCollider frontRightCollider;
+    [Space(10)]
+    public GameObject rearLeftMesh;
+    public WheelCollider rearLeftCollider;
+    [Space(10)]
+    public GameObject rearRightMesh;
+    public WheelCollider rearRightCollider;
 
-    public GameObject FLO;
-    public GameObject FRO;
-    public GameObject RLO;
-    public GameObject RRO;
+	[Space(20)]
+      //[Header("EFFECTS")]
+    [Space(10)]
+    public bool useEffects = false;
+    public ParticleSystem RLWParticleSystem;
+    public ParticleSystem RRWParticleSystem;
 
-    public float currentSpeed;
-    public int maxSpeed;
-    public int maxRevSpeed;
+    [Space(10)]
+    public TrailRenderer RLWTireSkid;
+    public TrailRenderer RRWTireSkid;
 
-    public float SteerAngle;
+	[Space(20)]
+    //[Header("Sounds")]
+    [Space(10)]
+    public bool useSounds = false;
+    public AudioSource carEngineSound;
+    public AudioSource tireScreechSound;
+    float initialCarEngineSoundPitch;
 
-    public float engineRPM;
-    public float gearUpRPM;
-    public float gearDownRPM;
-    private GameObject COM;
+	float carSpeed;
+    bool isDrifting;
+    bool isTractionLocked;
 
-	public bool handBraked;
+	Rigidbody rb;
+    float steeringAxis;
+    float throttleAxis;
+    float driftingAxis;
+    float localVelocityZ;
+    float localVelocityX;
+    bool deceleratingCar;
 
-	public List<AudioSource> CarSound;
+	void Start() {
+		carRigidbody = gameObject.GetComponent<Rigidbody>();
+      	carRigidbody.centerOfMass = bodyMassCenter;
 
-	public float[] MinRpmTable = {50.0f, 75.0f, 112.0f, 166.9f, 222.4f, 278.3f, 333.5f, 388.2f, 435.5f, 483.3f, 538.4f, 594.3f, 643.6f, 692.8f, 741.9f, 790.0f};
-	public float[] NormalRpmTable = {72.0f, 93.0f, 155.9f, 202.8f, 267.0f, 314.5f, 377.4f, 423.9f, 472.1f, 519.4f, 582.3f, 631.3f, 680.8f, 729.4f, 778.8f, 826.1f};
-	public float[] MaxRpmTable = {92.0f, 136.0f, 182.9f, 247.4f, 294.3f, 357.5f, 403.6f, 452.5f, 499.3f, 562.5f, 612.3f, 661.6f, 708.8f, 758.9f, 806.0f, 1000.0f};
-	public float[] PitchingTable = {0.12f, 0.12f, 0.12f, 0.12f, 0.11f, 0.10f, 0.09f, 0.08f, 0.06f, 0.06f, 0.06f, 0.06f, 0.06f, 0.06f, 0.06f, 0.06f};
-	public float RangeDivider = 4f;
-	public float soundRPM;
-
-    void Start()
-    {
-
-        FL = FLO.GetComponent<WheelCollider>();
-        FR = FRO.GetComponent<WheelCollider>();
-        RL = RLO.GetComponent<WheelCollider>();
-        RR = RRO.GetComponent<WheelCollider>();
-		
-        COM = GameObject.Find("Col");
-        //GetComponent<Rigidbody>().centerOfMass = new Vector3(COM.transform.localPosition.x * transform.localScale.x, COM.transform.localPosition.y * transform.localScale.y, COM.transform.localPosition.z * transform.localScale.z);		            
-        /*
-		for(int i =1; i<=16; ++i) 
-		{
-			CarSound.Add(GameObject.Find(string.Format("CarSound ({0})",i)).GetComponent<AudioSource>());
-			CarSound[i-1].Play();
-		}
-        */
-    }
-	
-
-    void Update()
-    {
-		//Functions to access.
-        Steer();
-		AutoGears();
-		Accelerate();
-		//carSounds ();
-
-		//Defenitions.
-        currentSpeed = GetComponent<Rigidbody>().velocity.magnitude * 3.6f;
-        engineRPM = Mathf.Round((RL.rpm * gearRatio[currentGear]));
-		soundRPM = Mathf.Round(engineRPM * (1000 / 420));
-        torque = bhp * gearRatio[currentGear];     
-
-        if (Input.GetButton("Jump"))
-        {
-            HandBrakes();
-        }
-		
-		if (Input.GetKey(KeyCode.R)) {
-
-			transform.position.Set(transform.position.x, transform.position.y + 5f, transform.position.z);
-			transform.rotation.Set(0,0,0,0);
-		}
-    }
-
-
-	//Function
-
-    void Accelerate()
-    {
-
-        if (currentSpeed < maxSpeed && currentSpeed > maxRevSpeed && engineRPM <= gearUpRPM)
-        {
-
-            RL.motorTorque = torque * Input.GetAxis("Vertical");
-            RR.motorTorque = torque * Input.GetAxis("Vertical");
-            RL.brakeTorque = 0;
-            RR.brakeTorque = 0;
-        }
-        else
-        {
-
-            RL.motorTorque = 0;
-            RR.motorTorque = 0;
-            RL.brakeTorque = brakeTorque;
-            RR.brakeTorque = brakeTorque;
+		if(carEngineSound != null){
+          	initialCarEngineSoundPitch = carEngineSound.pitch;
         }
 
-		if (engineRPM > 0 && Input.GetAxis("Vertical") < 0 && engineRPM <= gearUpRPM)
-		{
-			
-            FL.brakeTorque = brakeTorque;
-            FR.brakeTorque = brakeTorque;
+		if(useSounds){
+          	InvokeRepeating("CarSounds", 0f, 0.1f);
         }
-        else
-        {
-            FL.brakeTorque = 0;
-            FR.brakeTorque = 0;
+		else if(!useSounds){
+          	if(carEngineSound != null){
+            	carEngineSound.Stop();
+          	}
+          	if(tireScreechSound != null){
+            	tireScreechSound.Stop();
+          	}
         }
-    }
-
-    void Steer()
-    {
-
-        if (currentSpeed < 100)
-        {
-            SteerAngle = 13 - (currentSpeed / 10);
-        }
-        else
-        {
-            SteerAngle = 2;
-        }
-
-        FL.steerAngle = SteerAngle * Input.GetAxis("Horizontal");
-        FR.steerAngle = SteerAngle * Input.GetAxis("Horizontal");
-    }
-
-
-    void AutoGears()
-    {
-
-        int AppropriateGear = currentGear;
-
-        if (engineRPM >= gearUpRPM)
-        {
-
-            for (var i = 0; i < gearRatio.Length; i++)
-            {
-                if (RL.rpm * gearRatio[i] < gearUpRPM)
-                {
-                    AppropriateGear = i;
-                    break;
-                }
-            }
-            currentGear = AppropriateGear;
-        }
-
-        if (engineRPM <= gearDownRPM)
-        {
-            AppropriateGear = currentGear;
-            for (var j = gearRatio.Length - 1; j >= 0; j--)
-            {
-                if (RL.rpm * gearRatio[j] > gearDownRPM)
-                {
-                    AppropriateGear = j;
-                    break;
-                }
-            }
-            currentGear = AppropriateGear;
-        }
-    }
-
-    void HandBrakes()
-    {
-
-        RL.brakeTorque = brakeTorque;
-        RR.brakeTorque = brakeTorque;
-        FL.brakeTorque = brakeTorque;
-        FR.brakeTorque = brakeTorque;
-    }
-
-    /*
-	void carSounds()
-	{
-
-		for (int i = 0; i < 16; i++) {
-			if (i == 0) {
-				//Set CarSound[0]
-				if (soundRPM < MinRpmTable[i]) {
-					CarSound[0].volume = 0.0f;
-				} else if (soundRPM >= MinRpmTable[i] && soundRPM < NormalRpmTable[i]) {
-					float Range = NormalRpmTable[i] - MinRpmTable[i];
-					float ReducedRPM = soundRPM - MinRpmTable[i];
-					CarSound[0].volume = ReducedRPM / Range;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					CarSound[0].pitch = 1f - PitchingTable[i] + PitchMath;
-				} else if (soundRPM >= NormalRpmTable[i] && soundRPM <= MaxRpmTable[i]) {
-					float Range = MaxRpmTable[i] - NormalRpmTable[i];
-					float ReducedRPM = soundRPM - NormalRpmTable[i];
-					CarSound[0].volume = 1f;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					CarSound[0].pitch = 1f + PitchMath;
-				} else if (soundRPM > MaxRpmTable[i]) {
-					float Range = (MaxRpmTable[i + 1] - MaxRpmTable[i]) / RangeDivider;
-					float ReducedRPM = soundRPM - MaxRpmTable[i];
-					CarSound[0].volume = 1f - ReducedRPM / Range;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					//CarSound[0].pitch = 1f + PitchingTable[i] + PitchMath;
-				}
-			} else if (i == 1) {
-				//Set CarSound[1]
-				if (soundRPM < MinRpmTable[i]) {
-					CarSound[1].volume = 0.0f;
-				} else if (soundRPM >= MinRpmTable[i] && soundRPM < NormalRpmTable[i]) {
-					float Range = NormalRpmTable[i] - MinRpmTable[i];
-					float ReducedRPM = soundRPM - MinRpmTable[i];
-					CarSound[1].volume = ReducedRPM / Range;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					CarSound[1].pitch = 1f - PitchingTable[i] + PitchMath;
-				} else if (soundRPM >= NormalRpmTable[i] && soundRPM <= MaxRpmTable[i]) {
-					float Range = MaxRpmTable[i] - NormalRpmTable[i];
-					float ReducedRPM = soundRPM - NormalRpmTable[i];
-					CarSound[1].volume = 1f;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					CarSound[1].pitch = 1f + PitchMath;
-				} else if (soundRPM > MaxRpmTable[i]) {
-					float Range = (MaxRpmTable[i + 1] - MaxRpmTable[i]) / RangeDivider;
-					float ReducedRPM = soundRPM - MaxRpmTable[i];
-					CarSound[1].volume = 1f - ReducedRPM / Range;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					//CarSound[1].pitch = 1f + PitchingTable[i] + PitchMath;
-				}
-			} else if (i == 2) {
-				//Set CarSound[2]
-				if (soundRPM < MinRpmTable[i]) {
-					CarSound[2].volume = 0.0f;
-				} else if (soundRPM >= MinRpmTable[i] && soundRPM < NormalRpmTable[i]) {
-					float Range = NormalRpmTable[i] - MinRpmTable[i];
-					float ReducedRPM = soundRPM - MinRpmTable[i];
-					CarSound[2].volume = ReducedRPM / Range;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					CarSound[2].pitch = 1f - PitchingTable[i] + PitchMath;
-				} else if (soundRPM >= NormalRpmTable[i] && soundRPM <= MaxRpmTable[i]) {
-					float Range = MaxRpmTable[i] - NormalRpmTable[i];
-					float ReducedRPM = soundRPM - NormalRpmTable[i];
-					CarSound[2].volume = 1f;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					CarSound[2].pitch = 1f + PitchMath;
-				} else if (soundRPM > MaxRpmTable[i]) {
-					float Range = (MaxRpmTable[i + 1] - MaxRpmTable[i]) / RangeDivider;
-					float ReducedRPM = soundRPM - MaxRpmTable[i];
-					CarSound[2].volume = 1f - ReducedRPM / Range;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					//CarSound[2].pitch = 1f + PitchingTable[i] + PitchMath;
-				}
-			} else if (i == 3) {
-				//Set CarSound[3]
-				if (soundRPM < MinRpmTable[i]) {
-					CarSound[3].volume = 0.0f;
-				} else if (soundRPM >= MinRpmTable[i] && soundRPM < NormalRpmTable[i]) {
-					float Range = NormalRpmTable[i] - MinRpmTable[i];
-					float ReducedRPM = soundRPM - MinRpmTable[i];
-					CarSound[3].volume = ReducedRPM / Range;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					CarSound[3].pitch = 1f - PitchingTable[i] + PitchMath;
-				} else if (soundRPM >= NormalRpmTable[i] && soundRPM <= MaxRpmTable[i]) {
-					float Range = MaxRpmTable[i] - NormalRpmTable[i];
-					float ReducedRPM = soundRPM - NormalRpmTable[i];
-					CarSound[3].volume = 1f;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					CarSound[3].pitch = 1f + PitchMath;
-				} else if (soundRPM > MaxRpmTable[i]) {
-					float Range = (MaxRpmTable[i + 1] - MaxRpmTable[i]) / RangeDivider;
-					float ReducedRPM = soundRPM - MaxRpmTable[i];
-					CarSound[3].volume = 1f - ReducedRPM / Range;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					//CarSound[3].pitch = 1f + PitchingTable[i] + PitchMath;
-				}
-			} else if (i == 4) {
-				//Set CarSound[4]
-				if (soundRPM < MinRpmTable[i]) {
-					CarSound[4].volume = 0.0f;
-				} else if (soundRPM >= MinRpmTable[i] && soundRPM < NormalRpmTable[i]) {
-					float Range = NormalRpmTable[i] - MinRpmTable[i];
-					float ReducedRPM = soundRPM - MinRpmTable[i];
-					CarSound[4].volume = ReducedRPM / Range;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					CarSound[4].pitch = 1f - PitchingTable[i] + PitchMath;
-				} else if (soundRPM >= NormalRpmTable[i] && soundRPM <= MaxRpmTable[i]) {
-					float Range = MaxRpmTable[i] - NormalRpmTable[i];
-					float ReducedRPM = soundRPM - NormalRpmTable[i];
-					CarSound[4].volume = 1f;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					CarSound[4].pitch = 1f + PitchMath;
-				} else if (soundRPM > MaxRpmTable[i]) {
-					float Range = (MaxRpmTable[i + 1] - MaxRpmTable[i]) / RangeDivider;
-					float ReducedRPM = soundRPM - MaxRpmTable[i];
-					CarSound[4].volume = 1f - ReducedRPM / Range;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					//CarSound[4].pitch = 1f + PitchingTable[i] + PitchMath;
-				}
-			} else if (i == 5) {
-				//Set CarSound[5]
-				if (soundRPM < MinRpmTable[i]) {
-					CarSound[5].volume = 0.0f;
-				} else if (soundRPM >= MinRpmTable[i] && soundRPM < NormalRpmTable[i]) {
-					float Range = NormalRpmTable[i] - MinRpmTable[i];
-					float ReducedRPM = soundRPM - MinRpmTable[i];
-					CarSound[5].volume = ReducedRPM / Range;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					CarSound[5].pitch = 1f - PitchingTable[i] + PitchMath;
-				} else if (soundRPM >= NormalRpmTable[i] && soundRPM <= MaxRpmTable[i]) {
-					float Range = MaxRpmTable[i] - NormalRpmTable[i];
-					float ReducedRPM = soundRPM - NormalRpmTable[i];
-					CarSound[5].volume = 1f;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					CarSound[5].pitch = 1f + PitchMath;
-				} else if (soundRPM > MaxRpmTable[i]) {
-					float Range = (MaxRpmTable[i + 1] - MaxRpmTable[i]) / RangeDivider;
-					float ReducedRPM = soundRPM - MaxRpmTable[i];
-					CarSound[5].volume = 1f - ReducedRPM / Range;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					//CarSound[5].pitch = 1f + PitchingTable[i] + PitchMath;
-				}
-			} else if (i == 6) {
-				//Set CarSound[6]
-				if (soundRPM < MinRpmTable[i]) {
-					CarSound[6].volume = 0.0f;
-				} else if (soundRPM >= MinRpmTable[i] && soundRPM < NormalRpmTable[i]) {
-					float Range = NormalRpmTable[i] - MinRpmTable[i];
-					float ReducedRPM = soundRPM - MinRpmTable[i];
-					CarSound[6].volume = ReducedRPM / Range;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					CarSound[6].pitch = 1f - PitchingTable[i] + PitchMath;
-				} else if (soundRPM >= NormalRpmTable[i] && soundRPM <= MaxRpmTable[i]) {
-					float Range = MaxRpmTable[i] - NormalRpmTable[i];
-					float ReducedRPM = soundRPM - NormalRpmTable[i];
-					CarSound[6].volume = 1f;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					CarSound[6].pitch = 1f + PitchMath;
-				} else if (soundRPM > MaxRpmTable[i]) {
-					float Range = (MaxRpmTable[i + 1] - MaxRpmTable[i]) / RangeDivider;
-					float ReducedRPM = soundRPM - MaxRpmTable[i];
-					CarSound[6].volume = 1f - ReducedRPM / Range;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					//CarSound[6].pitch = 1f + PitchingTable[i] + PitchMath;
-				}
-			} else if (i == 7) {
-				//Set CarSound[7]
-				if (soundRPM < MinRpmTable[i]) {
-					CarSound[7].volume = 0.0f;
-				} else if (soundRPM >= MinRpmTable[i] && soundRPM < NormalRpmTable[i]) {
-					float Range = NormalRpmTable[i] - MinRpmTable[i];
-					float ReducedRPM = soundRPM - MinRpmTable[i];
-					CarSound[7].volume = ReducedRPM / Range;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					CarSound[7].pitch = 1f - PitchingTable[i] + PitchMath;
-				} else if (soundRPM >= NormalRpmTable[i] && soundRPM <= MaxRpmTable[i]) {
-					float Range = MaxRpmTable[i] - NormalRpmTable[i];
-					float ReducedRPM = soundRPM - NormalRpmTable[i];
-					CarSound[7].volume = 1f;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					CarSound[7].pitch = 1f + PitchMath;
-				} else if (soundRPM > MaxRpmTable[i]) {
-					float Range = (MaxRpmTable[i + 1] - MaxRpmTable[i]) / RangeDivider;
-					float ReducedRPM = soundRPM - MaxRpmTable[i];
-					CarSound[7].volume = 1f - ReducedRPM / Range;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					//CarSound[7].pitch = 1f + PitchingTable[i] + PitchMath;
-				}
-			} else if (i == 8) {
-				//Set CarSound[8]
-				if (soundRPM < MinRpmTable[i]) {
-					CarSound[8].volume = 0.0f;
-				} else if (soundRPM >= MinRpmTable[i] && soundRPM < NormalRpmTable[i]) {
-					float Range = NormalRpmTable[i] - MinRpmTable[i];
-					float ReducedRPM = soundRPM - MinRpmTable[i];
-					CarSound[8].volume = ReducedRPM / Range;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					CarSound[8].pitch = 1f - PitchingTable[i] + PitchMath;
-				} else if (soundRPM >= NormalRpmTable[i] && soundRPM <= MaxRpmTable[i]) {
-					float Range = MaxRpmTable[i] - NormalRpmTable[i];
-					float ReducedRPM = soundRPM - NormalRpmTable[i];
-					CarSound[8].volume = 1f;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					CarSound[8].pitch = 1f + PitchMath;
-				} else if (soundRPM > MaxRpmTable[i]) {
-					float Range = (MaxRpmTable[i + 1] - MaxRpmTable[i]) / RangeDivider;
-					float ReducedRPM = soundRPM - MaxRpmTable[i];
-					CarSound[8].volume = 1f - ReducedRPM / Range;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					//CarSound[8].pitch = 1f + PitchingTable[i] + PitchMath;
-				}
-			} else if (i == 9) {
-				//Set CarSound[9]
-				if (soundRPM < MinRpmTable[i]) {
-					CarSound[9].volume = 0.0f;
-				} else if (soundRPM >= MinRpmTable[i] && soundRPM < NormalRpmTable[i]) {
-					float Range = NormalRpmTable[i] - MinRpmTable[i];
-					float ReducedRPM = soundRPM - MinRpmTable[i];
-					CarSound[9].volume = ReducedRPM / Range;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					CarSound[9].pitch = 1f - PitchingTable[i] + PitchMath;
-				} else if (soundRPM >= NormalRpmTable[i] && soundRPM <= MaxRpmTable[i]) {
-					float Range = MaxRpmTable[i] - NormalRpmTable[i];
-					float ReducedRPM = soundRPM - NormalRpmTable[i];
-					CarSound[9].volume = 1f;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					CarSound[9].pitch = 1f + PitchMath;
-				} else if (soundRPM > MaxRpmTable[i]) {
-					float Range = (MaxRpmTable[i + 1] - MaxRpmTable[i]) / RangeDivider;
-					float ReducedRPM = soundRPM - MaxRpmTable[i];
-					CarSound[9].volume = 1f - ReducedRPM / Range;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					//CarSound[9].pitch = 1f + PitchingTable[i] + PitchMath;
-				}
-			} else if (i == 10) {
-				//Set CarSound[10]
-				if (soundRPM < MinRpmTable[i]) {
-					CarSound[10].volume = 0.0f;
-				} else if (soundRPM >= MinRpmTable[i] && soundRPM < NormalRpmTable[i]) {
-					float Range = NormalRpmTable[i] - MinRpmTable[i];
-					float ReducedRPM = soundRPM - MinRpmTable[i];
-					CarSound[10].volume = ((ReducedRPM / Range) * 2f) - 1f;
-					//CarSound[10].volume = 0.0f;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					CarSound[10].pitch = 1f - PitchingTable[i] + PitchMath;
-				} else if (soundRPM >= NormalRpmTable[i] && soundRPM <= MaxRpmTable[i]) {
-					float Range = MaxRpmTable[i] - NormalRpmTable[i];
-					float ReducedRPM = soundRPM - NormalRpmTable[i];
-					CarSound[10].volume = 1f;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					CarSound[10].pitch = 1f + PitchMath;
-				} else if (soundRPM > MaxRpmTable[i]) {
-					float Range = (MaxRpmTable[i + 1] - MaxRpmTable[i]) / RangeDivider;
-					float ReducedRPM = soundRPM - MaxRpmTable[i];
-					CarSound[10].volume = 1f - ReducedRPM / Range;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					//CarSound[10].pitch = 1f + PitchingTable[i] + PitchMath;
-				}
-			} else if (i == 11) {
-				//Set CarSound[11]
-				if (soundRPM < MinRpmTable[i]) {
-					CarSound[11].volume = 0.0f;
-				} else if (soundRPM >= MinRpmTable[i] && soundRPM < NormalRpmTable[i]) {
-					float Range = NormalRpmTable[i] - MinRpmTable[i];
-					float ReducedRPM = soundRPM - MinRpmTable[i];
-					CarSound[11].volume = ReducedRPM / Range;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					CarSound[11].pitch = 1f - PitchingTable[i] + PitchMath;
-				} else if (soundRPM >= NormalRpmTable[i] && soundRPM <= MaxRpmTable[i]) {
-					float Range = MaxRpmTable[i] - NormalRpmTable[i];
-					float ReducedRPM = soundRPM - NormalRpmTable[i];
-					CarSound[11].volume = 1f;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					CarSound[11].pitch = 1f + PitchMath;
-				} else if (soundRPM > MaxRpmTable[i]) {
-					float Range = (MaxRpmTable[i + 1] - MaxRpmTable[i]) / RangeDivider;
-					float ReducedRPM = soundRPM - MaxRpmTable[i];
-					CarSound[11].volume = 1f - ReducedRPM / Range;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					//CarSound[11].pitch = 1f + PitchingTable[i] + PitchMath;
-				}
-			} else if (i == 12) {
-				//Set CarSound[12]
-				if (soundRPM < MinRpmTable[i]) {
-					CarSound[12].volume = 0.0f;
-				} else if (soundRPM >= MinRpmTable[i] && soundRPM < NormalRpmTable[i]) {
-					float Range = NormalRpmTable[i] - MinRpmTable[i];
-					float ReducedRPM = soundRPM - MinRpmTable[i];
-					CarSound[12].volume = ReducedRPM / Range;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					CarSound[12].pitch = 1f - PitchingTable[i] + PitchMath;
-				} else if (soundRPM >= NormalRpmTable[i] && soundRPM <= MaxRpmTable[i]) {
-					float Range = MaxRpmTable[i] - NormalRpmTable[i];
-					float ReducedRPM = soundRPM - NormalRpmTable[i];
-					CarSound[12].volume = 1f;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					CarSound[12].pitch = 1f + PitchMath;
-				} else if (soundRPM > MaxRpmTable[i]) {
-					float Range = (MaxRpmTable[i + 1] - MaxRpmTable[i]) / RangeDivider;
-					float ReducedRPM = soundRPM - MaxRpmTable[i];
-					CarSound[12].volume = 1f - ReducedRPM / Range;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					//CarSound[12].pitch = 1f + PitchingTable[i] + PitchMath;
-				}
-			} else if (i == 13) {
-				//Set CarSound[13]
-				if (soundRPM < MinRpmTable[i]) {
-					CarSound[13].volume = 0.0f;
-				} else if (soundRPM >= MinRpmTable[i] && soundRPM < NormalRpmTable[i]) {
-					float Range = NormalRpmTable[i] - MinRpmTable[i];
-					float ReducedRPM = soundRPM - MinRpmTable[i];
-					CarSound[13].volume = ReducedRPM / Range;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					CarSound[13].pitch = 1f - PitchingTable[i] + PitchMath;
-				} else if (soundRPM >= NormalRpmTable[i] && soundRPM <= MaxRpmTable[i]) {
-					float Range = MaxRpmTable[i] - NormalRpmTable[i];
-					float ReducedRPM = soundRPM - NormalRpmTable[i];
-					CarSound[13].volume = 1f;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					CarSound[13].pitch = 1f + PitchMath;
-				} else if (soundRPM > MaxRpmTable[i]) {
-					float Range = (MaxRpmTable[i + 1] - MaxRpmTable[i]) / RangeDivider;
-					float ReducedRPM = soundRPM - MaxRpmTable[i];
-					CarSound[13].volume = 1f - ReducedRPM / Range;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					//CarSound[13].pitch = 1f + PitchingTable[i] + PitchMath;
-				}
-			} else if (i == 14) {
-				//Set CarSound[14]
-				if (soundRPM < MinRpmTable[i]) {
-					CarSound[14].volume = 0.0f;
-				} else if (soundRPM >= MinRpmTable[i] && soundRPM < NormalRpmTable[i]) {
-					float Range = NormalRpmTable[i] - MinRpmTable[i];
-					float ReducedRPM = soundRPM - MinRpmTable[i];
-					CarSound[14].volume = ReducedRPM / Range;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					CarSound[14].pitch = 1f - PitchingTable[i] + PitchMath;
-				} else if (soundRPM >= NormalRpmTable[i] && soundRPM <= MaxRpmTable[i]) {
-					float Range = MaxRpmTable[i] - NormalRpmTable[i];
-					float ReducedRPM = soundRPM - NormalRpmTable[i];
-					CarSound[14].volume = 1f;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					CarSound[14].pitch = 1f + PitchMath;
-				} else if (soundRPM > MaxRpmTable[i]) {
-					float Range = (MaxRpmTable[i + 1] - MaxRpmTable[i]) / RangeDivider;
-					float ReducedRPM = soundRPM - MaxRpmTable[i];
-					CarSound[14].volume = 1f - ReducedRPM / Range;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					//CarSound[14].pitch = 1f + PitchingTable[i] + PitchMath;
-				}
-			} else if (i == 15) {
-				//Set CarSound[15]
-				if (soundRPM < MinRpmTable[i]) {
-					CarSound[15].volume = 0.0f;
-				} else if (soundRPM >= MinRpmTable[i] && soundRPM < NormalRpmTable[i]) {
-					float Range = NormalRpmTable[i] - MinRpmTable[i];
-					float ReducedRPM = soundRPM - MinRpmTable[i];
-					CarSound[15].volume = ReducedRPM / Range;
-					float PitchMath = (ReducedRPM * PitchingTable[i]) / Range;
-					CarSound[15].pitch = 1f - PitchingTable[i] + PitchMath;
-				} else if (soundRPM >= NormalRpmTable[i] && soundRPM <= MaxRpmTable[i]) {
-					float Range = MaxRpmTable[i] - NormalRpmTable[i];
-					float ReducedRPM = soundRPM - NormalRpmTable[i];
-					CarSound[15].volume = 1f;
-					float PitchMath = (ReducedRPM * (PitchingTable[i] + 0.1f)) / Range;
-					CarSound[15].pitch = 1f + PitchMath;
-				}
-			}
-		}
 	}
-    */
+
+	void Update() {
+		carSpeed = (2 * Mathf.PI * frontLeftCollider.radius * frontLeftCollider.rpm * 60) / 1000;
+      	localVelocityZ = transform.InverseTransformDirection(carRigidbody.velocity).z;
+
+        if(Input.GetKey(KeyCode.W)){
+          	CancelInvoke("DecelerateCar");
+          	deceleratingCar = false;
+          	GoForward();
+        }
+        if(Input.GetKey(KeyCode.S)){
+          	CancelInvoke("DecelerateCar");
+          	deceleratingCar = false;
+          	GoReverse();
+        }
+
+        if(Input.GetKey(KeyCode.A)){
+          	TurnLeft();
+        }
+        if(Input.GetKey(KeyCode.D)){
+          	TurnRight();
+        }
+        if((!Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.W))){
+          	ThrottleOff();
+        }
+        if((!Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.W)) && !Input.GetKey(KeyCode.Space) && !deceleratingCar){
+          	InvokeRepeating("DecelerateCar", 0f, 0.1f);
+          	deceleratingCar = true;
+        }
+        if(!Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D) && steeringAxis != 0f){
+          	ResetSteeringAngle();
+        }
+
+		AnimateWheelMeshes();
+	}
+
+	public void CarSounds(){
+      	if(useSounds){
+        	try{
+          		if(carEngineSound != null){
+            		float engineSoundPitch = initialCarEngineSoundPitch + (Mathf.Abs(carRigidbody.velocity.magnitude) / 25f);
+            		carEngineSound.pitch = engineSoundPitch;
+          		}
+        	}catch(Exception ex){
+          		Debug.LogWarning(ex);
+        	}
+      	}else if(!useSounds){
+        	if(carEngineSound != null && carEngineSound.isPlaying){
+          		carEngineSound.Stop();
+        	}
+      	}
+    }
+
+	public void TurnLeft(){
+      	steeringAxis = steeringAxis - (Time.deltaTime * 10f * steeringSpeed);
+      	if(steeringAxis < -1f){
+        	steeringAxis = -1f;
+      	}
+
+      	var steeringAngle = steeringAxis * maxSteeringAngle;
+      	frontLeftCollider.steerAngle = Mathf.Lerp(frontLeftCollider.steerAngle, steeringAngle, steeringSpeed);
+      	frontRightCollider.steerAngle = Mathf.Lerp(frontRightCollider.steerAngle, steeringAngle, steeringSpeed);
+    }
+
+	public void TurnRight(){
+      	steeringAxis = steeringAxis + (Time.deltaTime * 10f * steeringSpeed);
+      	if(steeringAxis > 1f){
+        	steeringAxis = 1f;
+      	}
+      	var steeringAngle = steeringAxis * maxSteeringAngle;
+      	frontLeftCollider.steerAngle = Mathf.Lerp(frontLeftCollider.steerAngle, steeringAngle, steeringSpeed);
+      	frontRightCollider.steerAngle = Mathf.Lerp(frontRightCollider.steerAngle, steeringAngle, steeringSpeed);
+    }
+
+	public void ResetSteeringAngle(){
+      	if(steeringAxis < 0f){
+        	steeringAxis = steeringAxis + (Time.deltaTime * 10f * steeringSpeed);
+      	}else if(steeringAxis > 0f){
+        	steeringAxis = steeringAxis - (Time.deltaTime * 10f * steeringSpeed);
+      	}
+      	if(Mathf.Abs(frontLeftCollider.steerAngle) < 1f){
+        	steeringAxis = 0f;
+      	}
+
+      	var steeringAngle = steeringAxis * maxSteeringAngle;
+      	frontLeftCollider.steerAngle = Mathf.Lerp(frontLeftCollider.steerAngle, steeringAngle, steeringSpeed);
+      	frontRightCollider.steerAngle = Mathf.Lerp(frontRightCollider.steerAngle, steeringAngle, steeringSpeed);
+    }
+
+	void AnimateWheelMeshes(){
+      	try{
+        	Quaternion FLWRotation;
+        	Vector3 FLWPosition;
+        	frontLeftCollider.GetWorldPose(out FLWPosition, out FLWRotation);
+        	frontLeftMesh.transform.position = FLWPosition;
+        	frontLeftMesh.transform.rotation = FLWRotation;
+
+        	Quaternion FRWRotation;
+        	Vector3 FRWPosition;
+        	frontRightCollider.GetWorldPose(out FRWPosition, out FRWRotation);
+        	frontRightMesh.transform.position = FRWPosition;
+        	frontRightMesh.transform.rotation = FRWRotation;
+
+        	Quaternion RLWRotation;
+        	Vector3 RLWPosition;
+        	rearLeftCollider.GetWorldPose(out RLWPosition, out RLWRotation);
+        	rearLeftMesh.transform.position = RLWPosition;
+        	rearLeftMesh.transform.rotation = RLWRotation;
+
+        	Quaternion RRWRotation;
+        	Vector3 RRWPosition;
+        	rearRightCollider.GetWorldPose(out RRWPosition, out RRWRotation);
+        	rearRightMesh.transform.position = RRWPosition;
+        	rearRightMesh.transform.rotation = RRWRotation;
+      	}catch(Exception ex){
+        	Debug.LogWarning(ex);
+      	}
+    }
 }
