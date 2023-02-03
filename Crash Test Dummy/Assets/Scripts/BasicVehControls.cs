@@ -3,8 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class BasicVehControls : MonoBehaviour {
-	[Space(20)]
-	//[Header("Camera")]
+	[Header("Camera")]
+	[Space(10)]
 
 	public bool doDynamicFOV = false;
 	public Camera camera;
@@ -13,8 +13,9 @@ public class BasicVehControls : MonoBehaviour {
 	[Range(1, 120)]
 	public float maxFOV = 90;
 
-    //[Header("Car Setup")]
+    [Header("Car Setup")]
     [Space(10)]
+
     [Range(20, 190)]
     public int maxSpeed = 90;
     [Range(10, 120)]
@@ -34,9 +35,9 @@ public class BasicVehControls : MonoBehaviour {
     [Space(10)]
     public Vector3 bodyMassCenter;
 
-	[Space(20)]
-	//[Header("Wheels")]
+	[Header("Wheels")]
 	[Space(10)]
+
 	public GameObject frontLeftMesh;
     public WheelCollider frontLeftCollider;
     [Space(10)]
@@ -49,9 +50,9 @@ public class BasicVehControls : MonoBehaviour {
     public GameObject rearRightMesh;
     public WheelCollider rearRightCollider;
 
-	[Space(20)]
-    //[Header("EFFECTS")]
+    [Header("EFFECTS")]
     [Space(10)]
+
     public bool useEffects = false;
     public ParticleSystem RLWParticleSystem;
     public ParticleSystem RRWParticleSystem;
@@ -59,10 +60,10 @@ public class BasicVehControls : MonoBehaviour {
     [Space(10)]
     public TrailRenderer RLWTireSkid;
     public TrailRenderer RRWTireSkid;
-
-	[Space(20)]
-    //[Header("Sounds")]
+	
+    [Header("Sounds")]
     [Space(10)]
+
     public bool useSounds = false;
     public AudioSource carEngineSound;
     public AudioSource tireScreechSound;
