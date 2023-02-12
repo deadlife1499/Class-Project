@@ -62,7 +62,7 @@ public class BasicVehControls : MonoBehaviour {
     float throttleAxis;
     float localVelocityZ;
     bool deceleratingCar;
-	float carSpeed;
+	public float carSpeed;
 
 	void Start() {
 		rb = gameObject.GetComponent<Rigidbody>();
@@ -141,7 +141,7 @@ public class BasicVehControls : MonoBehaviour {
             	float engineSoundPitch = initialCarEngineSoundPitch + (Mathf.Abs(rb.velocity.magnitude) / 25f);
             	carEngineSound.pitch = engineSoundPitch;
           	}
-      	}else if(!useSounds){
+      	}else if(!useSounds) {
         	if(carEngineSound != null && carEngineSound.isPlaying){
           		carEngineSound.Stop();
         	}

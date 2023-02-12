@@ -13,58 +13,70 @@ public class EnterVehicle : MonoBehaviour
     BasicVehControls carControls;
     public Camera carCamera;
     public Transform playerExitLoc;
-    public GameObject EnterText;
+    public GameObject enterText;
+    public AudioListener playerListener;
+    public AudioListener carListener;
+    CharacterController playerController;
 
     void Start() {
         player = gameObject;
         inCar = false;
         currentCar.GetComponent<BasicVehControls>().enabled = false;
         carCamera.enabled = false;
+        carListener.enabled = false;
+        playerController = GetComponent<CharacterController>();
     }
 
     void Update() {
         float distance = Vector3.Distance(transform.position, currentCar.transform.position);
 
         if(distance < 5 && !inCar) {
-            EnterText.SetActive(true);
+            enterText.SetActive(true);
         }
         else {
-            EnterText.SetActive(false);
+            enterText.SetActive(false);
         }
 
         if(!inCar) {
             if(Input.GetKeyDown(KeyCode.E) && distance < 5) {
-                inCar = true;
                 carControls = currentCar.GetComponent<BasicVehControls>();
-                currentCar = currentCar;
                 EnterCar(currentCar);
                 return;
             }
         }
         else if(Input.GetKeyDown(KeyCode.E)) {
-            inCar = false;
             ExitCar();
+        }
+        else {
+            transform.position = playerExitLoc.position;
         }
     }
 
     void EnterCar(GameObject car) {
+        inCar = true;
+
         camera.enabled = false;
         playerMesh.SetActive(false);
         playerScript.enabled = false;
+        playerListener.enabled = false;
+        playerController.enabled = false;
 
         carControls.enabled = true;
         carCamera.enabled = true;
+        carListener.enabled = true;
     }
 
     void ExitCar() {
-        transform.position = new Vector3(0, 0, 0);
-        transform.position = playerExitLoc.position;
-        
+        inCar = false;
+
         carControls.enabled = false;
         carCamera.enabled = false;
+        carListener.enabled = false;
 
         camera.enabled = true;
         playerMesh.SetActive(true);
         playerScript.enabled = true;
+        playerListener.enabled = true;
+        playerController.enabled = true;
     }
 }
