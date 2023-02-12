@@ -23,9 +23,9 @@ public class BeanMovement : MonoBehaviour
     Vector2 currentMouseDeltaVelocity = Vector2.zero;
 
     int doubleJumpNum;
-    public float jumpForce = 2f;
+    public float jumpForce = 1.5f;
     Vector3 playerVelocity;
-    public float gravityValue = -13f;
+    public float gravityValue = -9.81f;
 
     void Start() {
         controller = GetComponent<CharacterController>();
@@ -73,10 +73,15 @@ public class BeanMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && (controller.isGrounded || doubleJumpNum > 0))
         {
+            playerVelocity.y = 0;
             playerVelocity.y += Mathf.Sqrt(jumpForce * -3.0f * gravityValue);
             doubleJumpNum--;
         }
         playerVelocity.y += gravityValue * Time.deltaTime;
+        if(playerVelocity.y < 0 && controller.isGrounded) {
+            playerVelocity.y = 0;
+        }
+        Debug.Log(playerVelocity);
         controller.Move(playerVelocity * Time.deltaTime);
     }
 }
