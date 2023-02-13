@@ -20,10 +20,13 @@ MonoBehaviour:
     height: 989
   m_ShowMode: 4
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
 =======
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
   m_Title: Scene
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 371}
@@ -348,6 +351,9 @@ MonoBehaviour:
   - {fileID: 16}
   m_Selected: 0
   m_LastSelected: 3
+<<<<<<< HEAD
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
 >>>>>>> parent of eb8d5dc (grtgreg)
 --- !u!114 &10
 MonoBehaviour:
@@ -614,9 +620,15 @@ MonoBehaviour:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_SelectedIDs: e21f0000
       m_LastClickedID: 0
       m_ExpandedIDs: 36fbffff
+=======
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 66d0ffff6cf5ffff920b0100
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
       m_SelectedIDs: 
       m_LastClickedID: 0
@@ -638,7 +650,11 @@ MonoBehaviour:
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
         m_ClientGUIView: {fileID: 0}
+=======
+        m_ClientGUIView: {fileID: 8}
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
         m_ClientGUIView: {fileID: 8}
 >>>>>>> parent of eb8d5dc (grtgreg)
@@ -908,9 +924,15 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 4.8705034, y: 4.573548, z: 30.580355}
     speed: 2
     m_Value: {x: 4.8705034, y: 4.573548, z: 30.580355}
+=======
+    m_Target: {x: -224.00589, y: -0.7335068, z: -62.04605}
+    speed: 2
+    m_Value: {x: -224.00589, y: -0.7335068, z: -62.04605}
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
     m_Target: {x: -224.00589, y: -0.7335068, z: -62.04605}
     speed: 2
@@ -963,9 +985,15 @@ MonoBehaviour:
     m_gridOpacity: 0.5
   m_Rotation:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 0.1058235, y: -0.20286582, z: 0.022058614, w: 0.9732228}
     speed: 2
     m_Value: {x: -0.10582351, y: 0.20286584, z: -0.022058615, w: -0.9732228}
+=======
+    m_Target: {x: 0.00881116, y: 0.8634543, z: 0.015338447, w: -0.50426227}
+    speed: 2
+    m_Value: {x: 0.008833511, y: 0.8626337, z: 0.01532409, w: -0.5055198}
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
     m_Target: {x: 0.00881116, y: 0.8634543, z: 0.015338447, w: -0.50426227}
     speed: 2
