@@ -7793,7 +7793,11 @@ MonoBehaviour:
   lockCursor: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   jumpForce: 10
+=======
+  jumpForce: 2
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
   jumpForce: 2
 >>>>>>> parent of eb8d5dc (grtgreg)
@@ -14070,7 +14074,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalPosition: {x: -2.14, y: 2.24, z: 0}
+=======
+  m_LocalPosition: {x: 0.06, y: 2.24, z: 0}
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
   m_LocalPosition: {x: 0.06, y: 2.24, z: 0}
 >>>>>>> parent of eb8d5dc (grtgreg)
@@ -25183,6 +25191,7 @@ MeshFilter:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
@@ -25258,6 +25267,8 @@ MeshFilter:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59a8f7c85fa98d4489a21bb8da9d7302, type: 3}
 =======
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
 >>>>>>> parent of eb8d5dc (grtgreg)
 =======
@@ -25519,8 +25530,13 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalRotation: {x: 0.0060243644, y: -0.0018614233, z: -0.00073131965, w: 0.99997985}
   m_LocalPosition: {x: 2.910383e-11, y: 0.67219144, z: 0.00027132037}
+=======
+  m_LocalRotation: {x: 0.00000008146035, y: -0.000000119209275, z: 3.5527133e-15, w: 1}
+  m_LocalPosition: {x: 0, y: 0.67219144, z: 0.00027132037}
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
   m_LocalRotation: {x: 0.00000008146035, y: -0.000000119209275, z: 3.5527133e-15, w: 1}
   m_LocalPosition: {x: 0, y: 0.67219144, z: 0.00027132037}
@@ -25561,7 +25577,11 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalEulerAnglesHint: {x: 0.69, y: -0.214, z: -0.085}
+=======
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 >>>>>>> parent of eb8d5dc (grtgreg)
@@ -26439,7 +26459,10 @@ MeshFilter:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
 >>>>>>> parent of eb8d5dc (grtgreg)
 =======
