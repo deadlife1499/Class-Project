@@ -23,9 +23,12 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Title: Hierarchy
   m_RootView: {fileID: 6}
 =======
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
 >>>>>>> parent of eb8d5dc (grtgreg)
 =======
@@ -359,6 +362,9 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
 >>>>>>> parent of eb8d5dc (grtgreg)
 =======
 >>>>>>> parent of eb8d5dc (grtgreg)
@@ -636,7 +642,11 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ExpandedIDs: 2afbffff
+=======
+      m_ExpandedIDs: 66d0ffff6cf5ffff920b0100
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
       m_ExpandedIDs: 66d0ffff6cf5ffff920b0100
 >>>>>>> parent of eb8d5dc (grtgreg)
@@ -668,7 +678,11 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         m_ClientGUIView: {fileID: 0}
+=======
+        m_ClientGUIView: {fileID: 8}
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
         m_ClientGUIView: {fileID: 8}
 >>>>>>> parent of eb8d5dc (grtgreg)
@@ -950,9 +964,15 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 15.408274, y: 5.4565697, z: 32.190113}
     speed: 2
     m_Value: {x: 15.408274, y: 5.4565697, z: 32.190113}
+=======
+    m_Target: {x: -224.00589, y: -0.7335068, z: -62.04605}
+    speed: 2
+    m_Value: {x: -224.00589, y: -0.7335068, z: -62.04605}
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
     m_Target: {x: -224.00589, y: -0.7335068, z: -62.04605}
     speed: 2
@@ -1023,9 +1043,15 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: -0.08549662, y: -0.0692759, z: 0.0059599164, w: -0.9939142}
     speed: 2
     m_Value: {x: -0.08698697, y: -0.06926655, z: 0.0060637956, w: -0.99378}
+=======
+    m_Target: {x: 0.00881116, y: 0.8634543, z: 0.015338447, w: -0.50426227}
+    speed: 2
+    m_Value: {x: 0.008833511, y: 0.8626337, z: 0.01532409, w: -0.5055198}
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
     m_Target: {x: 0.00881116, y: 0.8634543, z: 0.015338447, w: -0.50426227}
     speed: 2
