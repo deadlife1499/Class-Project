@@ -612,6 +612,7 @@ MeshFilter:
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &104989439
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,6 +719,8 @@ Transform:
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 >>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of 7721109 (car elevator)
 =======
 >>>>>>> parent of 7721109 (car elevator)
 =======
@@ -2492,6 +2495,7 @@ MeshFilter:
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &368388992
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
 GameObject:
@@ -3265,6 +3269,8 @@ MeshFilter:
 >>>>>>> parent of 7721109 (car elevator)
 =======
 >>>>>>> parent of 7721109 (car elevator)
+=======
+>>>>>>> parent of 7721109 (car elevator)
 --- !u!1 &421128750
 GameObject:
   m_ObjectHideFlags: 0
@@ -3435,6 +3441,7 @@ AudioSource:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &433051866
 =======
 --- !u!1 &427245406
@@ -3474,6 +3481,9 @@ AudioSource:
 =======
 --- !u!1 &480725448
 >>>>>>> parent of 7721109 (car elevator)
+=======
+--- !u!1 &480725448
+>>>>>>> parent of 7721109 (car elevator)
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3493,10 +3503,13 @@ GameObject:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - component: {fileID: 427245407}
   - component: {fileID: 427245409}
   - component: {fileID: 427245408}
 =======
+=======
+>>>>>>> parent of 7721109 (car elevator)
 =======
 >>>>>>> parent of 7721109 (car elevator)
   - component: {fileID: 480725449}
@@ -3504,6 +3517,9 @@ GameObject:
   - component: {fileID: 480725451}
   - component: {fileID: 480725450}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 7721109 (car elevator)
+=======
 >>>>>>> parent of 7721109 (car elevator)
 =======
 >>>>>>> parent of 7721109 (car elevator)
@@ -3604,6 +3620,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3722,11 +3739,15 @@ Camera:
 =======
 --- !u!4 &480725449
 >>>>>>> parent of 7721109 (car elevator)
+=======
+--- !u!4 &480725449
+>>>>>>> parent of 7721109 (car elevator)
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3746,11 +3767,16 @@ Transform:
 =======
 =======
 >>>>>>> parent of 7721109 (car elevator)
+=======
+>>>>>>> parent of 7721109 (car elevator)
   m_GameObject: {fileID: 480725448}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 520.24, y: -13.27, z: 23.8}
   m_LocalScale: {x: 4, y: 1, z: 5}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 7721109 (car elevator)
+=======
 >>>>>>> parent of 7721109 (car elevator)
 =======
 >>>>>>> parent of 7721109 (car elevator)
@@ -4432,10 +4458,14 @@ Camera:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Depth: 30
 =======
   m_Depth: -1
 >>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_Depth: -1
+>>>>>>> parent of 7721109 (car elevator)
 =======
   m_Depth: -1
 >>>>>>> parent of 7721109 (car elevator)
@@ -4519,6 +4549,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 433051866}
@@ -4684,6 +4715,8 @@ MeshRenderer:
 >>>>>>> parent of 7721109 (car elevator)
 =======
 >>>>>>> parent of 7721109 (car elevator)
+=======
+>>>>>>> parent of 7721109 (car elevator)
   m_GameObject: {fileID: 1024980102}
   m_Enabled: 1
   m_CastShadows: 1
@@ -4691,7 +4724,10 @@ MeshRenderer:
   m_DynamicOccludee: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+>>>>>>> parent of 7721109 (car elevator)
 =======
 >>>>>>> parent of 7721109 (car elevator)
 =======
@@ -4708,10 +4744,14 @@ MeshRenderer:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 2100000, guid: 4b1f3769a701c464a8a8dd232adc9317, type: 2}
 =======
   - {fileID: 2100000, guid: aeee7071bea0a4c478b4fea5933c5f79, type: 2}
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+  - {fileID: 2100000, guid: aeee7071bea0a4c478b4fea5933c5f79, type: 2}
+>>>>>>> parent of 7721109 (car elevator)
 =======
   - {fileID: 2100000, guid: aeee7071bea0a4c478b4fea5933c5f79, type: 2}
 >>>>>>> parent of 7721109 (car elevator)
@@ -4742,10 +4782,14 @@ MeshRenderer:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!33 &446570929
 =======
 --- !u!33 &1024980106
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+--- !u!33 &1024980106
+>>>>>>> parent of 7721109 (car elevator)
 =======
 --- !u!33 &1024980106
 >>>>>>> parent of 7721109 (car elevator)
@@ -4757,6 +4801,7 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -5086,6 +5131,10 @@ MeshFilter:
 =======
   m_GameObject: {fileID: 1071481111}
   m_Mesh: {fileID: 378355243327018891, guid: 07080858bcac78d42b8f39d42168c7c2, type: 3}
+=======
+  m_GameObject: {fileID: 1024980102}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+>>>>>>> parent of 7721109 (car elevator)
 =======
   m_GameObject: {fileID: 1024980102}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
@@ -8985,6 +9034,7 @@ Canvas:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1231891310
 =======
 --- !u!1 &1203499001
@@ -9113,6 +9163,8 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1203499001}
   m_Mesh: {fileID: -1948931852003117590, guid: 07080858bcac78d42b8f39d42168c7c2, type: 3}
+=======
+>>>>>>> parent of 7721109 (car elevator)
 =======
 >>>>>>> parent of 7721109 (car elevator)
 =======
@@ -10185,6 +10237,7 @@ MeshFilter:
   m_GameObject: {fileID: 1343369168}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &1361652561
 PrefabInstance:
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
@@ -10272,6 +10325,8 @@ MeshFilter:
 =======
 >>>>>>> parent of eb8d5dc (grtgreg)
 =======
+=======
+>>>>>>> parent of 7721109 (car elevator)
 =======
 >>>>>>> parent of 7721109 (car elevator)
 --- !u!1001 &1361652561
@@ -10655,9 +10710,12 @@ MeshFilter:
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1387808662
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
 =======
+=======
+>>>>>>> parent of 7721109 (car elevator)
 =======
 >>>>>>> parent of 7721109 (car elevator)
 --- !u!1001 &1419519511
@@ -10719,6 +10777,9 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 46cc332a2bfb40e42b11902d2b18a588, type: 3}
 --- !u!1 &1419519512 stripped
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 7721109 (car elevator)
+=======
 >>>>>>> parent of 7721109 (car elevator)
 =======
 >>>>>>> parent of 7721109 (car elevator)
@@ -10732,6 +10793,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   serializedVersion: 6
@@ -11062,6 +11124,10 @@ MeshFilter:
   m_GameObject: {fileID: 1419519512}
   m_Enabled: 1
 >>>>>>> parent of 7721109 (car elevator)
+=======
+  m_GameObject: {fileID: 1419519512}
+  m_Enabled: 1
+>>>>>>> parent of 7721109 (car elevator)
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b59330f0f89e42a4d9280c073e491c43, type: 3}
   m_Name: 
@@ -11090,6 +11156,9 @@ MeshFilter:
   carEngineSound: {fileID: 0}
   carSpeed: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 7721109 (car elevator)
+=======
 >>>>>>> parent of 7721109 (car elevator)
 =======
 >>>>>>> parent of 7721109 (car elevator)
@@ -11191,6 +11260,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1431827692}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -11427,6 +11497,8 @@ Transform:
 >>>>>>> parent of 7721109 (car elevator)
 =======
 >>>>>>> parent of 7721109 (car elevator)
+=======
+>>>>>>> parent of 7721109 (car elevator)
 --- !u!1 &1458574290
 GameObject:
   m_ObjectHideFlags: 0
@@ -11505,6 +11577,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458574290}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -11840,6 +11913,8 @@ MeshFilter:
 >>>>>>> parent of 7721109 (car elevator)
 =======
 >>>>>>> parent of 7721109 (car elevator)
+=======
+>>>>>>> parent of 7721109 (car elevator)
 --- !u!1 &1534295234
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
 GameObject:
@@ -12011,6 +12086,7 @@ MeshFilter:
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1537354647
 GameObject:
   m_ObjectHideFlags: 0
@@ -12117,6 +12193,8 @@ MeshFilter:
 >>>>>>> parent of eb8d5dc (grtgreg)
 =======
 >>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of 7721109 (car elevator)
 =======
 >>>>>>> parent of 7721109 (car elevator)
 =======
@@ -12372,6 +12450,7 @@ MeshFilter:
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1559489123
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
 GameObject:
@@ -12529,6 +12608,8 @@ MeshFilter:
 =======
   m_GameObject: {fileID: 1559489123}
   m_Mesh: {fileID: -4535155556042274551, guid: 07080858bcac78d42b8f39d42168c7c2, type: 3}
+=======
+>>>>>>> parent of 7721109 (car elevator)
 =======
 >>>>>>> parent of 7721109 (car elevator)
 =======
@@ -13450,6 +13531,7 @@ MeshFilter:
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1632520645
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
 GameObject:
@@ -13617,6 +13699,8 @@ MeshFilter:
     m_AsymptoteValue: 0.75
     m_Stiffness: 1
   m_Enabled: 1
+=======
+>>>>>>> parent of 7721109 (car elevator)
 =======
 >>>>>>> parent of 7721109 (car elevator)
 =======
@@ -13961,6 +14045,7 @@ MeshFilter:
 =======
   m_GameObject: {fileID: 1675070664}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &1676000852
@@ -14663,6 +14748,8 @@ MeshFilter:
 >>>>>>> parent of 7721109 (car elevator)
 =======
 >>>>>>> parent of 7721109 (car elevator)
+=======
+>>>>>>> parent of 7721109 (car elevator)
 --- !u!1 &1775880345
 GameObject:
   m_ObjectHideFlags: 0
@@ -14806,6 +14893,7 @@ MeshFilter:
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1793418795
 GameObject:
   m_ObjectHideFlags: 0
@@ -14871,6 +14959,8 @@ WheelCollider:
     m_AsymptoteValue: 0.75
     m_Stiffness: 1
   m_Enabled: 1
+=======
+>>>>>>> parent of 7721109 (car elevator)
 =======
 >>>>>>> parent of 7721109 (car elevator)
 =======
@@ -15957,6 +16047,7 @@ MeshFilter:
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1872579272
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
 GameObject:
@@ -16706,6 +16797,8 @@ MeshFilter:
 =======
 =======
 >>>>>>> parent of 7721109 (car elevator)
+=======
+>>>>>>> parent of 7721109 (car elevator)
 --- !u!1 &2043592565
 >>>>>>> parent of 7721109 (car elevator)
 GameObject:
@@ -17033,6 +17126,7 @@ MeshFilter:
 =======
   m_GameObject: {fileID: 2043592565}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &2058707346
@@ -22092,6 +22186,8 @@ MeshFilter:
 >>>>>>> parent of 7721109 (car elevator)
 =======
 >>>>>>> parent of 7721109 (car elevator)
+=======
+>>>>>>> parent of 7721109 (car elevator)
 --- !u!1 &2088968910
 GameObject:
   m_ObjectHideFlags: 0
@@ -22410,6 +22506,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -22837,6 +22934,8 @@ CanvasRenderer:
 >>>>>>> parent of eb8d5dc (grtgreg)
 =======
 >>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of 7721109 (car elevator)
 =======
 >>>>>>> parent of 7721109 (car elevator)
 =======
