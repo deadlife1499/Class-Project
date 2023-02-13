@@ -27,6 +27,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Title: Hierarchy
   m_RootView: {fileID: 6}
 =======
@@ -39,6 +40,9 @@ MonoBehaviour:
 =======
 >>>>>>> parent of eb8d5dc (grtgreg)
   m_Title: Scene
+=======
+  m_Title: Console
+>>>>>>> parent of fae4cdf (grgrt)
 =======
   m_Title: Console
 >>>>>>> parent of fae4cdf (grgrt)
@@ -373,6 +377,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastSelected: 3
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -387,6 +392,9 @@ MonoBehaviour:
 >>>>>>> parent of eb8d5dc (grtgreg)
 =======
 >>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_LastSelected: 1
+>>>>>>> parent of fae4cdf (grgrt)
 =======
   m_LastSelected: 1
 >>>>>>> parent of fae4cdf (grgrt)
@@ -413,6 +421,9 @@ MonoBehaviour:
   m_Name: ConsoleWindow
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of fae4cdf (grgrt)
+=======
 >>>>>>> parent of fae4cdf (grgrt)
 =======
 >>>>>>> parent of fae4cdf (grgrt)
@@ -447,6 +458,9 @@ MonoBehaviour:
   m_LastSelected: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of fae4cdf (grgrt)
+=======
 >>>>>>> parent of fae4cdf (grgrt)
 =======
 >>>>>>> parent of fae4cdf (grgrt)
@@ -694,6 +708,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_SelectedIDs: 
       m_LastClickedID: 0
 <<<<<<< HEAD
@@ -717,6 +732,11 @@ MonoBehaviour:
 =======
       m_ExpandedIDs: 66d0ffff6cf5ffff920b0100
 >>>>>>> parent of eb8d5dc (grtgreg)
+=======
+      m_SelectedIDs: 665e0000
+      m_LastClickedID: 24166
+      m_ExpandedIDs: 36fbffff265d0000665e0000
+>>>>>>> parent of fae4cdf (grgrt)
 =======
       m_SelectedIDs: 665e0000
       m_LastClickedID: 24166
@@ -1041,6 +1061,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 15.408274, y: 5.4565697, z: 32.190113}
     speed: 2
     m_Value: {x: 15.408274, y: 5.4565697, z: 32.190113}
@@ -1069,6 +1090,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -224.00589, y: -0.7335068, z: -62.04605}
 >>>>>>> parent of eb8d5dc (grtgreg)
+=======
+    m_Target: {x: -21.772663, y: -16.658955, z: 45.079662}
+    speed: 2
+    m_Value: {x: -21.772663, y: -16.658955, z: 45.079662}
+>>>>>>> parent of fae4cdf (grgrt)
 =======
     m_Target: {x: -21.772663, y: -16.658955, z: 45.079662}
     speed: 2
@@ -1138,6 +1164,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: -0.08549662, y: -0.0692759, z: 0.0059599164, w: -0.9939142}
     speed: 2
     m_Value: {x: -0.08698697, y: -0.06926655, z: 0.0060637956, w: -0.99378}
@@ -1166,6 +1193,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.008833511, y: 0.8626337, z: 0.01532409, w: -0.5055198}
 >>>>>>> parent of eb8d5dc (grtgreg)
+=======
+    m_Target: {x: 0.2744078, y: -0.13536774, z: 0.038934134, w: 0.9513187}
+    speed: 2
+    m_Value: {x: 0.27438763, y: -0.13535778, z: 0.03893127, w: 0.9512487}
+>>>>>>> parent of fae4cdf (grgrt)
 =======
     m_Target: {x: 0.2744078, y: -0.13536774, z: 0.038934134, w: 0.9513187}
     speed: 2
@@ -1241,6 +1273,9 @@ MonoBehaviour:
     height: 535
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of fae4cdf (grgrt)
+=======
 >>>>>>> parent of fae4cdf (grgrt)
 =======
 >>>>>>> parent of fae4cdf (grgrt)
