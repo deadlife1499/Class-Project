@@ -25568,6 +25568,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalRotation: {x: 0.0060243644, y: -0.0018614233, z: -0.00073131965, w: 0.99997985}
   m_LocalPosition: {x: 2.910383e-11, y: 0.67219144, z: 0.00027132037}
 =======
@@ -25618,11 +25619,16 @@ Transform:
   m_LocalRotation: {x: 0.00000008146035, y: -0.000000119209275, z: 3.5527133e-15, w: 1}
   m_LocalPosition: {x: 0, y: 0.67219144, z: 0.00027132037}
 >>>>>>> parent of 7721109 (car elevator)
+=======
+  m_LocalRotation: {x: 0.00000008146035, y: -0.000000119209275, z: 3.5527133e-15, w: 1}
+  m_LocalPosition: {x: 0, y: 0.67219144, z: 0.00027132037}
+>>>>>>> parent of 7721109 (car elevator)
   m_LocalScale: {x: 150, y: 150, z: 150}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1853141937}
   m_RootOrder: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -25669,6 +25675,9 @@ Transform:
 =======
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 >>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of 7721109 (car elevator)
 =======
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 >>>>>>> parent of 7721109 (car elevator)
