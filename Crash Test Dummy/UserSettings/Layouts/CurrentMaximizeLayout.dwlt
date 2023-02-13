@@ -52,11 +52,15 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 546
 =======
     width: 1278
     height: 693
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    height: 557
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
     height: 557
 >>>>>>> parent of eb8d5dc (grtgreg)
@@ -80,10 +84,14 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_TargetSize: {x: 1106, y: 525}
 =======
   m_TargetSize: {x: 1278, y: 672}
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+  m_TargetSize: {x: 1106, y: 536}
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
   m_TargetSize: {x: 1106, y: 536}
 >>>>>>> parent of eb8d5dc (grtgreg)
@@ -113,6 +121,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_VBaseRangeMin: -262.5
     m_VBaseRangeMax: 262.5
 =======
@@ -121,6 +130,10 @@ MonoBehaviour:
     m_VBaseRangeMin: -336
     m_VBaseRangeMax: 336
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    m_VBaseRangeMin: -268
+    m_VBaseRangeMax: 268
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
     m_VBaseRangeMin: -268
     m_VBaseRangeMax: 268
@@ -157,6 +170,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Translation: {x: 553, y: 262.5}
 =======
       width: 1278
@@ -164,6 +178,9 @@ MonoBehaviour:
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 639, y: 336}
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    m_Translation: {x: 553, y: 268}
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
     m_Translation: {x: 553, y: 268}
 >>>>>>> parent of eb8d5dc (grtgreg)
@@ -189,6 +206,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 1106, y: 546}
 =======
       x: -639
@@ -199,6 +217,9 @@ MonoBehaviour:
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1278, y: 693}
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+  m_LastWindowPixelSize: {x: 1106, y: 557}
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
   m_LastWindowPixelSize: {x: 1106, y: 557}
 >>>>>>> parent of eb8d5dc (grtgreg)
@@ -237,11 +258,15 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 939
 =======
     width: 1509
     height: 957
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    height: 957
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
     height: 957
 >>>>>>> parent of eb8d5dc (grtgreg)
@@ -279,11 +304,15 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 567
 =======
     width: 1509
     height: 714
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    height: 578
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
     height: 578
 >>>>>>> parent of eb8d5dc (grtgreg)
@@ -319,6 +348,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 567
 =======
     width: 229
@@ -326,6 +356,11 @@ MonoBehaviour:
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
+=======
+    height: 578
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
     height: 578
   m_MinSize: {x: 200, y: 200}
@@ -373,11 +408,15 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 546
 =======
     width: 228
     height: 693
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    height: 557
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
     height: 557
 >>>>>>> parent of eb8d5dc (grtgreg)
@@ -397,6 +436,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       scrollPos: {x: 0, y: 71}
       m_SelectedIDs: 
       m_LastClickedID: 0
@@ -412,12 +452,17 @@ MonoBehaviour:
 >>>>>>> parent of eb8d5dc (grtgreg)
 =======
 >>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: e400ffff
       m_LastClickedID: -65308
       m_ExpandedIDs: 66fefefff2fffeff9200ffffe400ffff0e04ffffaa72ffff5c83fffff083ffff7a84ffffd684ffff2289ffff848affff740e0100b40e0100
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
 >>>>>>> parent of eb8d5dc (grtgreg)
 =======
 >>>>>>> parent of eb8d5dc (grtgreg)
@@ -468,11 +513,15 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 567
 =======
     width: 1280
     height: 714
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    height: 578
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
     height: 578
 >>>>>>> parent of eb8d5dc (grtgreg)
@@ -519,11 +568,15 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 546
 =======
     width: 1278
     height: 693
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    height: 557
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
     height: 557
 >>>>>>> parent of eb8d5dc (grtgreg)
@@ -738,6 +791,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 409.95935, y: -43.93523, z: -37.712875}
     speed: 2
     m_Value: {x: 409.95935, y: -43.93523, z: -37.712875}
@@ -746,6 +800,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 74.81769, y: -143.05505, z: -20.261692}
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    m_Target: {x: 368.7315, y: 60.490337, z: -74.97606}
+    speed: 2
+    m_Value: {x: 368.7315, y: 60.490337, z: -74.97606}
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
     m_Target: {x: 368.7315, y: 60.490337, z: -74.97606}
     speed: 2
@@ -811,7 +870,11 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: -0.18598321, y: 0.5239575, z: -0.1184551, w: -0.822801}
+=======
+    m_Target: {x: -0.15243171, y: 0.84643185, z: -0.3333902, w: -0.3863801}
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
     m_Target: {x: -0.15243171, y: 0.84643185, z: -0.3333902, w: -0.3863801}
 >>>>>>> parent of eb8d5dc (grtgreg)
@@ -829,6 +892,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Value: 21.133766
 =======
     m_Target: {x: -0.13665578, y: 0.65712196, z: -0.12285423, w: -0.7310497}
@@ -839,6 +903,9 @@ MonoBehaviour:
     speed: 2
     m_Value: 179.31958
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    m_Value: 198.61986
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
     m_Value: 198.61986
 >>>>>>> parent of eb8d5dc (grtgreg)
@@ -869,10 +936,14 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastSceneViewRotation: {x: 0, y: 0, z: 0, w: 0}
 =======
   m_LastSceneViewRotation: {x: -0.0024749415, y: 0.9976242, z: -0.05723055, w: -0.03972713}
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+  m_LastSceneViewRotation: {x: -0.0036620714, y: 0.99503624, z: -0.09311035, w: -0.036624275}
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
   m_LastSceneViewRotation: {x: -0.0036620714, y: 0.99503624, z: -0.09311035, w: -0.036624275}
 >>>>>>> parent of eb8d5dc (grtgreg)
@@ -1136,6 +1207,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 567
     width: 1471
     height: 372
@@ -1158,12 +1230,19 @@ MonoBehaviour:
     y: 578
     width: 1471
 >>>>>>> parent of eb8d5dc (grtgreg)
+=======
+    y: 578
+    width: 1471
+>>>>>>> parent of eb8d5dc (grtgreg)
     height: 379
   m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
 >>>>>>> parent of eb8d5dc (grtgreg)
 =======
 >>>>>>> parent of eb8d5dc (grtgreg)
@@ -1199,6 +1278,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 640
     width: 1470
     height: 351
@@ -1207,6 +1287,11 @@ MonoBehaviour:
     width: 1508
     height: 222
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    y: 651
+    width: 1470
+    height: 358
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
     y: 651
     width: 1470
@@ -1243,10 +1328,14 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/Materials
 =======
     - Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    - Assets/Dialogue system
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
     - Assets/Dialogue system
 >>>>>>> parent of eb8d5dc (grtgreg)
@@ -1261,6 +1350,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 56
   m_LastFolders:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1310,12 +1400,23 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
 >>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  - Assets/Dialogue system
+  m_LastFoldersGridSize: 56
+  m_LastProjectPath: C:\Users\juanp\Documents\GitHub\Class-Project\Crash Test Dummy
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+>>>>>>> parent of eb8d5dc (grtgreg)
     scrollPos: {x: 0, y: 398}
     m_SelectedIDs: f6150100
     m_LastClickedID: 71158
     m_ExpandedIDs: 0000000078b900007ab900007cb900007eb9000084b9000074c6000076c60000de110100e0110100e4110100e611010070150100741501007615010078150100c4150100e415010000ca9a3bffffff7f
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
 >>>>>>> parent of eb8d5dc (grtgreg)
 =======
 >>>>>>> parent of eb8d5dc (grtgreg)
@@ -1352,10 +1453,14 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 000000007a6100007c6100007e6100008861000000ca9a3bffffff7f
 =======
     m_ExpandedIDs: 00000000e2600000
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    m_ExpandedIDs: 
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
     m_ExpandedIDs: 
 >>>>>>> parent of eb8d5dc (grtgreg)
@@ -1392,10 +1497,16 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
 <<<<<<< HEAD
     m_HadKeyboardFocusLastEvent: 0
+=======
+    m_SelectedInstanceIDs: b271ffff
+    m_LastClickedInstanceID: -36430
+    m_HadKeyboardFocusLastEvent: 1
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
     m_SelectedInstanceIDs: b271ffff
     m_LastClickedInstanceID: -36430
@@ -1444,11 +1555,15 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_GridSize: 16
 =======
     m_ScrollPosition: {x: 0, y: 16}
     m_GridSize: 56
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    m_GridSize: 56
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
     m_GridSize: 56
 >>>>>>> parent of eb8d5dc (grtgreg)
@@ -1485,6 +1600,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 640
     width: 1470
     height: 351
@@ -1493,6 +1609,11 @@ MonoBehaviour:
     width: 1508
     height: 222
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    y: 651
+    width: 1470
+    height: 358
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
     y: 651
     width: 1470
@@ -1572,11 +1693,15 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 918
 =======
     width: 410
     height: 936
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    height: 936
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
     height: 936
 >>>>>>> parent of eb8d5dc (grtgreg)
