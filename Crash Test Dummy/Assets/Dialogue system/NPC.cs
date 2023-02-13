@@ -22,7 +22,7 @@ public class NPC : MonoBehaviour {
 	
 	void Update () {
           Vector3 Pos = Camera.main.WorldToScreenPoint(NPCCharacter.position);
-          Pos.y += 10;
+          Pos.y += 170;
           ChatBackGround.position = Pos;
     }
 
