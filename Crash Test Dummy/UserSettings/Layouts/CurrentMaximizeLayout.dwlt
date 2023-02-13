@@ -20,7 +20,7 @@ MonoBehaviour:
     x: 0
     y: 30
     width: 1920
-    height: 939
+    height: 957
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
@@ -49,11 +49,15 @@ MonoBehaviour:
     y: 73
 <<<<<<< HEAD
     width: 1106
+<<<<<<< HEAD
     height: 546
 =======
     width: 1278
     height: 693
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    height: 557
+>>>>>>> parent of eb8d5dc (grtgreg)
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -65,10 +69,14 @@ MonoBehaviour:
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_TargetSize: {x: 1106, y: 525}
 =======
   m_TargetSize: {x: 1278, y: 672}
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+  m_TargetSize: {x: 1106, y: 536}
+>>>>>>> parent of eb8d5dc (grtgreg)
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -86,6 +94,7 @@ MonoBehaviour:
 <<<<<<< HEAD
     m_HBaseRangeMin: -553
     m_HBaseRangeMax: 553
+<<<<<<< HEAD
     m_VBaseRangeMin: -262.5
     m_VBaseRangeMax: 262.5
 =======
@@ -94,6 +103,10 @@ MonoBehaviour:
     m_VBaseRangeMin: -336
     m_VBaseRangeMax: 336
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    m_VBaseRangeMin: -268
+    m_VBaseRangeMax: 268
+>>>>>>> parent of eb8d5dc (grtgreg)
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -113,8 +126,9 @@ MonoBehaviour:
       y: 21
 <<<<<<< HEAD
       width: 1106
-      height: 525
+      height: 536
     m_Scale: {x: 1, y: 1}
+<<<<<<< HEAD
     m_Translation: {x: 553, y: 262.5}
 =======
       width: 1278
@@ -122,6 +136,9 @@ MonoBehaviour:
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 639, y: 336}
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    m_Translation: {x: 553, y: 268}
+>>>>>>> parent of eb8d5dc (grtgreg)
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -130,11 +147,12 @@ MonoBehaviour:
       serializedVersion: 2
 <<<<<<< HEAD
       x: -553
-      y: -262.5
+      y: -268
       width: 1106
-      height: 525
+      height: 536
     m_MinimalGUI: 1
   m_defaultScale: 1
+<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 1106, y: 546}
 =======
       x: -639
@@ -145,6 +163,9 @@ MonoBehaviour:
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1278, y: 693}
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+  m_LastWindowPixelSize: {x: 1106, y: 557}
+>>>>>>> parent of eb8d5dc (grtgreg)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -171,11 +192,15 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
     width: 1471
+<<<<<<< HEAD
     height: 939
 =======
     width: 1509
     height: 957
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    height: 957
+>>>>>>> parent of eb8d5dc (grtgreg)
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
@@ -201,11 +226,15 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
     width: 1471
+<<<<<<< HEAD
     height: 567
 =======
     width: 1509
     height: 714
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    height: 578
+>>>>>>> parent of eb8d5dc (grtgreg)
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
@@ -229,6 +258,7 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
     width: 363
+<<<<<<< HEAD
     height: 567
 =======
     width: 229
@@ -236,6 +266,11 @@ MonoBehaviour:
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
+=======
+    height: 578
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> parent of eb8d5dc (grtgreg)
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -265,17 +300,22 @@ MonoBehaviour:
     y: 73
 <<<<<<< HEAD
     width: 362
+<<<<<<< HEAD
     height: 546
 =======
     width: 228
     height: 693
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    height: 557
+>>>>>>> parent of eb8d5dc (grtgreg)
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
+<<<<<<< HEAD
 <<<<<<< HEAD
       scrollPos: {x: 0, y: 71}
       m_SelectedIDs: 
@@ -287,6 +327,12 @@ MonoBehaviour:
       m_LastClickedID: 0
       m_ExpandedIDs: 1af8ffff1ef8ffff22f8ffff2af8ffff2ef8ffff32f8ffff3af8ffff3ef8ffff42f8ffff4af8ffff4ef8ffff52f8ffff5af8ffff5ef8ffff62f8ffff6af8ffff6ef8ffff76f8ffff7af8ffff7ef8ffff82f8ffff86f8ffff8af8ffff8ef8ffff96f8ffff9af8ffff9ef8ffffa6f8ffffaaf8ffffaef8ffffb6f8ffffbaf8ffffbef8ffffc6f8ffffcaf8ffffd2f8ffffd6f8ffffdaf8ffffdef8ffffe2f8ffffe6f8ffffeaf8fffff2f8fffff6f8fffffaf8fffffef8ffff02f9ffff06f9ffff0af9ffff0ef9ffff38faffff3cfaffff40faffff48faffff4cfaffff50faffff58faffff5cfaffff60faffff68faffff6cfaffff70faffff78faffff7cfaffff80faffff88faffff8cfaffff94faffff98faffff9cfaffffa0faffffa4faffffa8faffffacfaffffb4faffffb8faffffbcfaffffc4faffffc8faffffccfaffffd4faffffd8faffffdcfaffffe4faffffe8fafffff0fafffff4fafffff8fafffffcfaffff00fbffff04fbffff08fbffff10fbffff14fbffff18fbffff1cfbffff20fbffff24fbffff28fbffff2cfbffff36fbffffca5a00008c5b0000e25b0000285c0000
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: e400ffff
+      m_LastClickedID: -65308
+      m_ExpandedIDs: 66fefefff2fffeff9200ffffe400ffff0e04ffffaa72ffff5c83fffff083ffff7a84ffffd684ffff2289ffff848affff740e0100b40e0100
+>>>>>>> parent of eb8d5dc (grtgreg)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -302,7 +348,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 14}
+        m_ClientGUIView: {fileID: 5}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -329,11 +375,15 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
     width: 1108
+<<<<<<< HEAD
     height: 567
 =======
     width: 1280
     height: 714
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    height: 578
+>>>>>>> parent of eb8d5dc (grtgreg)
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 2}
@@ -368,11 +418,15 @@ MonoBehaviour:
     y: 73
 <<<<<<< HEAD
     width: 1106
+<<<<<<< HEAD
     height: 546
 =======
     width: 1278
     height: 693
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    height: 557
+>>>>>>> parent of eb8d5dc (grtgreg)
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -431,17 +485,6 @@ MonoBehaviour:
       snapCorner: 0
       id: unity-transform-toolbar
       index: 0
-      layout: 2
-    - dockPosition: 0
-      containerId: overlay-container--left
-      floating: 0
-      collapsed: 0
-      displayed: 1
-      snapOffset: {x: 0, y: 197}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
-      id: unity-component-tools
-      index: 1
       layout: 2
     - dockPosition: 0
       containerId: overlay-container--right
@@ -575,28 +618,6 @@ MonoBehaviour:
       id: Scene View/Particles
       index: 10
       layout: 4
-    - dockPosition: 1
-      containerId: overlay-container--right
-      floating: 0
-      collapsed: 0
-      displayed: 0
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
-      id: Scene View/Tilemap
-      index: 11
-      layout: 4
-    - dockPosition: 1
-      containerId: overlay-container--right
-      floating: 0
-      collapsed: 0
-      displayed: 0
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
-      id: Scene View/Tilemap Palette Helper
-      index: 12
-      layout: 4
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
   m_Gizmos: 1
   m_OverrideSceneCullingMask: 6917529027641081856
@@ -608,6 +629,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 409.95935, y: -43.93523, z: -37.712875}
     speed: 2
     m_Value: {x: 409.95935, y: -43.93523, z: -37.712875}
@@ -616,6 +638,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 74.81769, y: -143.05505, z: -20.261692}
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    m_Target: {x: 368.7315, y: 60.490337, z: -74.97606}
+    speed: 2
+    m_Value: {x: 368.7315, y: 60.490337, z: -74.97606}
+>>>>>>> parent of eb8d5dc (grtgreg)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -657,18 +684,23 @@ MonoBehaviour:
         m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0, y: 0}
+      m_Size: {x: 1, y: 1}
     m_ShowGrid: 1
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: -0.18598321, y: 0.5239575, z: -0.1184551, w: -0.822801}
+=======
+    m_Target: {x: -0.15243171, y: 0.84643185, z: -0.3333902, w: -0.3863801}
+>>>>>>> parent of eb8d5dc (grtgreg)
     speed: 2
-    m_Value: {x: -0.18596886, y: 0.5239171, z: -0.11844596, w: -0.8227375}
+    m_Value: {x: -0.1524225, y: 0.8463807, z: -0.33337006, w: -0.38635674}
   m_Size:
-    m_Target: 21.133766
+    m_Target: 198.61986
     speed: 2
+<<<<<<< HEAD
     m_Value: 21.133766
 =======
     m_Target: {x: -0.13665578, y: 0.65712196, z: -0.12285423, w: -0.7310497}
@@ -679,13 +711,16 @@ MonoBehaviour:
     speed: 2
     m_Value: 179.31958
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    m_Value: 198.61986
+>>>>>>> parent of eb8d5dc (grtgreg)
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1
-    m_SpeedNormalized: 0.5
+    m_Speed: 2
+    m_SpeedNormalized: 1
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -694,13 +729,17 @@ MonoBehaviour:
     m_FieldOfViewHorizontalOrVertical: 60
     m_NearClip: 0.03
     m_FarClip: 10000
-    m_DynamicClip: 1
+    m_DynamicClip: 0
     m_OcclusionCulling: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_LastSceneViewRotation: {x: 0, y: 0, z: 0, w: 0}
 =======
   m_LastSceneViewRotation: {x: -0.0024749415, y: 0.9976242, z: -0.05723055, w: -0.03972713}
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+  m_LastSceneViewRotation: {x: -0.0036620714, y: 0.99503624, z: -0.09311035, w: -0.036624275}
+>>>>>>> parent of eb8d5dc (grtgreg)
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -930,7 +969,7 @@ MonoBehaviour:
     x: 363
     y: 73
     width: 1106
-    height: 546
+    height: 557
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -945,12 +984,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     y: 567
     width: 1471
@@ -963,11 +1003,19 @@ MonoBehaviour:
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 12}
+=======
+    y: 578
+    width: 1471
+    height: 379
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 13}
+>>>>>>> parent of eb8d5dc (grtgreg)
   m_Panes:
   - {fileID: 12}
   - {fileID: 13}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -990,6 +1038,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 640
     width: 1470
     height: 351
@@ -998,6 +1047,11 @@ MonoBehaviour:
     width: 1508
     height: 222
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    y: 651
+    width: 1470
+    height: 358
+>>>>>>> parent of eb8d5dc (grtgreg)
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1016,15 +1070,20 @@ MonoBehaviour:
     m_SearchArea: 1
     m_Folders:
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/Materials
 =======
     - Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    - Assets/Dialogue system
+>>>>>>> parent of eb8d5dc (grtgreg)
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
-  m_StartGridSize: 16
+  m_StartGridSize: 56
   m_LastFolders:
+<<<<<<< HEAD
 <<<<<<< HEAD
   - Assets/Materials
   m_LastFoldersGridSize: 16
@@ -1048,6 +1107,18 @@ MonoBehaviour:
     m_LastClickedID: 25030
     m_ExpandedIDs: 00000000e26000006e610000ae610000b2610000b861000000ca9a3bffffff7f
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+  - Assets/Dialogue system
+  m_LastFoldersGridSize: 56
+  m_LastProjectPath: C:\Users\juanp\Documents\GitHub\Class-Project\Crash Test Dummy
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 398}
+    m_SelectedIDs: f6150100
+    m_LastClickedID: 71158
+    m_ExpandedIDs: 0000000078b900007ab900007cb900007eb9000084b9000074c6000076c60000de110100e0110100e4110100e611010070150100741501007615010078150100c4150100e415010000ca9a3bffffff7f
+>>>>>>> parent of eb8d5dc (grtgreg)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1076,10 +1147,14 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 000000007a6100007c6100007e6100008861000000ca9a3bffffff7f
 =======
     m_ExpandedIDs: 00000000e2600000
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    m_ExpandedIDs: 
+>>>>>>> parent of eb8d5dc (grtgreg)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1104,10 +1179,16 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
 <<<<<<< HEAD
     m_HadKeyboardFocusLastEvent: 0
+=======
+    m_SelectedInstanceIDs: b271ffff
+    m_LastClickedInstanceID: -36430
+    m_HadKeyboardFocusLastEvent: 1
+>>>>>>> parent of eb8d5dc (grtgreg)
     m_ExpandedInstanceIDs: c6230000ce610000ca610000d8610000ea610000f6610000fa610000
 =======
     m_HadKeyboardFocusLastEvent: 1
@@ -1138,11 +1219,15 @@ MonoBehaviour:
     m_NewAssetIndexInList: -1
 <<<<<<< HEAD
     m_ScrollPosition: {x: 0, y: 0}
+<<<<<<< HEAD
     m_GridSize: 16
 =======
     m_ScrollPosition: {x: 0, y: 16}
     m_GridSize: 56
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    m_GridSize: 56
+>>>>>>> parent of eb8d5dc (grtgreg)
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
 --- !u!114 &13
@@ -1167,6 +1252,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 640
     width: 1470
     height: 351
@@ -1175,6 +1261,11 @@ MonoBehaviour:
     width: 1508
     height: 222
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    y: 651
+    width: 1470
+    height: 358
+>>>>>>> parent of eb8d5dc (grtgreg)
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1198,7 +1289,7 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
     width: 449
-    height: 939
+    height: 957
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
 =======
@@ -1236,11 +1327,15 @@ MonoBehaviour:
     y: 73
 <<<<<<< HEAD
     width: 448
+<<<<<<< HEAD
     height: 918
 =======
     width: 410
     height: 936
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+    height: 936
+>>>>>>> parent of eb8d5dc (grtgreg)
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
