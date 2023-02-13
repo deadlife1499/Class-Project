@@ -493,6 +493,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 6
 =======
   m_RootOrder: 7
@@ -794,6 +795,10 @@ Transform:
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 >>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of eb8d5dc (grtgreg)
 --- !u!1 &112954287
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,6 +893,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2009,6 +2015,8 @@ MeshFilter:
 >>>>>>> parent of eb8d5dc (grtgreg)
 =======
 >>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
 --- !u!1 &248189594
 GameObject:
   m_ObjectHideFlags: 0
@@ -2157,11 +2165,14 @@ CharacterController:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &272809170
 MeshRenderer:
 =======
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
 >>>>>>> parent of eb8d5dc (grtgreg)
 =======
@@ -2189,6 +2200,7 @@ MeshRenderer:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2268,6 +2280,8 @@ MeshFilter:
   playerListener: {fileID: 0}
   carListener: {fileID: 0}
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
 >>>>>>> parent of eb8d5dc (grtgreg)
 =======
@@ -2368,6 +2382,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: dialogue
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3319,6 +3334,8 @@ MeshFilter:
 >>>>>>> parent of eb8d5dc (grtgreg)
 =======
 >>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
 --- !u!1 &421128750
 GameObject:
   m_ObjectHideFlags: 0
@@ -3486,9 +3503,13 @@ AudioSource:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &433051866
 =======
 --- !u!1 &427245406
+=======
+--- !u!1 &963194225
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
 --- !u!1 &963194225
 >>>>>>> parent of eb8d5dc (grtgreg)
@@ -3523,6 +3544,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3619,6 +3641,15 @@ GameObject:
   m_Name: Main Camera
   m_TagString: MainCamera
 >>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  - component: {fileID: 963194228}
+  - component: {fileID: 963194227}
+  - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+>>>>>>> parent of eb8d5dc (grtgreg)
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3632,8 +3663,11 @@ GameObject:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!4 &427245407
 =======
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
 >>>>>>> parent of eb8d5dc (grtgreg)
 =======
@@ -3710,6 +3744,9 @@ Camera:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
 >>>>>>> parent of eb8d5dc (grtgreg)
 =======
 >>>>>>> parent of eb8d5dc (grtgreg)
@@ -3732,6 +3769,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -14083,6 +14121,15 @@ Transform:
   m_Children: []
   m_Father: {fileID: 252597104}
 >>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_GameObject: {fileID: 963194225}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: -1}
+  m_LocalPosition: {x: 0, y: 1.81, z: 0.47}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 252597104}
+>>>>>>> parent of eb8d5dc (grtgreg)
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!45 &963194229
@@ -14093,6 +14140,7 @@ Skybox:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -15106,6 +15154,9 @@ MeshFilter:
 =======
   m_CustomSkybox: {fileID: 0}
 >>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_CustomSkybox: {fileID: 0}
+>>>>>>> parent of eb8d5dc (grtgreg)
 --- !u!1 &1188223274
 GameObject:
   m_ObjectHideFlags: 0
@@ -15207,6 +15258,7 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -16325,6 +16377,8 @@ MeshFilter:
 >>>>>>> parent of eb8d5dc (grtgreg)
 =======
 >>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
 --- !u!1 &1288677836 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2686890238580948232, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
@@ -16368,6 +16422,7 @@ MonoBehaviour:
   - Hello rookie crash test dummy
   - Today is the day you will finally graduate crash test school
   - have fun today, GOOD LUCK!
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -16799,6 +16854,12 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
 >>>>>>> parent of eb8d5dc (grtgreg)
+=======
+--- !u!1001 &1361652561
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+>>>>>>> parent of eb8d5dc (grtgreg)
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
@@ -16808,6 +16869,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2686890238580842728, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -16842,6 +16904,8 @@ PrefabInstance:
 >>>>>>> parent of eb8d5dc (grtgreg)
 =======
 >>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
       value: 446.51
       objectReference: {fileID: 0}
     - target: {fileID: 2686890238580842728, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
@@ -16856,6 +16920,9 @@ PrefabInstance:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
 >>>>>>> parent of eb8d5dc (grtgreg)
 =======
 >>>>>>> parent of eb8d5dc (grtgreg)
@@ -16913,6 +16980,7 @@ PrefabInstance:
       value: PLAYER
       objectReference: {fileID: 0}
     - target: {fileID: 2686890238580948232, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -17402,6 +17470,8 @@ MeshFilter:
 >>>>>>> parent of eb8d5dc (grtgreg)
 =======
 >>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
@@ -17416,6 +17486,9 @@ MeshFilter:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
 >>>>>>> parent of eb8d5dc (grtgreg)
 =======
 >>>>>>> parent of eb8d5dc (grtgreg)
@@ -17533,6 +17606,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1431827692}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -17760,6 +17834,8 @@ Transform:
 >>>>>>> parent of eb8d5dc (grtgreg)
 =======
 >>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
 --- !u!1 &1458574290
 GameObject:
   m_ObjectHideFlags: 0
@@ -17838,6 +17914,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458574290}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -18439,6 +18516,8 @@ MeshFilter:
 >>>>>>> parent of eb8d5dc (grtgreg)
 =======
 >>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
 --- !u!1001 &1542253517
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18504,6 +18583,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: a8555c0cff30527479e32562cef9141f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -20960,6 +21040,8 @@ MeshFilter:
 >>>>>>> parent of eb8d5dc (grtgreg)
 =======
 >>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
 --- !u!1 &1775880345
 GameObject:
   m_ObjectHideFlags: 0
@@ -20993,6 +21075,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -28584,6 +28667,8 @@ MeshFilter:
 >>>>>>> parent of eb8d5dc (grtgreg)
 =======
 >>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
 --- !u!1 &2129935363
 GameObject:
   m_ObjectHideFlags: 0
@@ -28685,6 +28770,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -29087,6 +29173,8 @@ CanvasRenderer:
   m_GameObject: {fileID: 2139124085}
   m_Mesh: {fileID: 4388353566076057822, guid: 07080858bcac78d42b8f39d42168c7c2, type: 3}
 >>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
 =======
 >>>>>>> parent of eb8d5dc (grtgreg)
 =======
