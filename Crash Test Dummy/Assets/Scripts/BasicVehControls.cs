@@ -140,6 +140,9 @@ public class BasicVehControls : MonoBehaviour {
           	if(carEngineSound != null){
             	float engineSoundPitch = initialCarEngineSoundPitch + (Mathf.Abs(rb.velocity.magnitude) / 25f);
             	carEngineSound.pitch = engineSoundPitch;
+				if(!camera.enabled) {
+					carEngineSound.pitch = 0f;
+				}
           	}
       	}else if(!useSounds) {
         	if(carEngineSound != null && carEngineSound.isPlaying){
