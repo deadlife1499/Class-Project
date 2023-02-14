@@ -4,63 +4,79 @@ using UnityEngine;
 
 public class EnterVehicle : MonoBehaviour
 {
-    GameObject[] vehicleObjs;
     GameObject player;
     bool inCar;
-    GameObject currentCar;
+    public GameObject currentCar;
     public Camera camera;
     public GameObject playerMesh;
     public BeanMovement playerScript;
     BasicVehControls carControls;
-    Camera carCamera;
+    public Camera carCamera;
     public Transform playerExitLoc;
+    public GameObject enterText;
+    public AudioListener playerListener;
+    public AudioListener carListener;
+    CharacterController playerController;
 
     void Start() {
         player = gameObject;
         inCar = false;
-        vehicleObjs = GameObject.FindGameObjectsWithTag("DrivableCar");
-        foreach(GameObject obj in vehicleObjs) {
-            obj.GetComponent<BasicVehControls>().enabled = false;
-            obj.GetComponent<Camera>().enabled = false;
-        }
+        currentCar.GetComponent<BasicVehControls>().enabled = false;
+        carCamera.enabled = false;
+        carListener.enabled = false;
+        playerController = GetComponent<CharacterController>();
     }
 
     void Update() {
+        float distance = Vector3.Distance(transform.position, currentCar.transform.position);
+
+        if(distance < 5 && !inCar) {
+            enterText.SetActive(true);
+        }
+        else {
+            enterText.SetActive(false);
+        }
+
         if(!inCar) {
-            foreach(GameObject obj in vehicleObjs) {
-                //if(CollisionDetection.IsTouching(obj, player) && Input.GetKey(KeyCode.E)) {
-                if(Input.GetKey(KeyCode.E)) {
-                    inCar = true;
-                    carControls = obj.GetComponent<BasicVehControls>();
-                    currentCar = obj;
-                    carCamera = obj.GetComponent<Camera>();
-                    EnterCar(obj);
-                    return;
-                }
+            if(Input.GetKeyDown(KeyCode.E) && distance < 5) {
+                carControls = currentCar.GetComponent<BasicVehControls>();
+                EnterCar(currentCar);
+                return;
             }
         }
-        else if(Input.GetKey(KeyCode.E)) {
+        else if(Input.GetKeyDown(KeyCode.E)) {
             ExitCar();
+        }
+        else {
+            transform.position = playerExitLoc.position;
         }
     }
 
     void EnterCar(GameObject car) {
+        inCar = true;
+
         camera.enabled = false;
         playerMesh.SetActive(false);
         playerScript.enabled = false;
+        playerListener.enabled = false;
+        playerController.enabled = false;
 
         carControls.enabled = true;
         carCamera.enabled = true;
+        carListener.enabled = true;
     }
 
     void ExitCar() {
+        inCar = false;
+
         carControls.enabled = false;
         carCamera.enabled = false;
-
-        transform.position = playerExitLoc.position;
+        carListener.enabled = false;
 
         camera.enabled = true;
         playerMesh.SetActive(true);
         playerScript.enabled = true;
+        playerListener.enabled = true;
+        playerController.enabled = true;
     }
 }

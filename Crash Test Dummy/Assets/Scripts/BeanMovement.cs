@@ -7,7 +7,6 @@ public class BeanMovement : MonoBehaviour
     [SerializeField] Transform playerCamera = null;
     [SerializeField] float mouseSensitivity = 3.5f;
     [SerializeField] float walkSpeed = 6.0f;
-    [SerializeField] float gravity = -13.0f;
     [SerializeField][Range(0.0f, 0.5f)] float moveSmoothTime = 0.3f;
     [SerializeField][Range(0.0f, 0.5f)] float mouseSmoothTime = 0.03f;
 
@@ -23,6 +22,11 @@ public class BeanMovement : MonoBehaviour
     Vector2 currentMouseDelta = Vector2.zero;
     Vector2 currentMouseDeltaVelocity = Vector2.zero;
 
+    int doubleJumpNum;
+    public float jumpForce = 2f;
+    Vector3 playerVelocity;
+    public float gravityValue = -13f;
+
     void Start() {
         controller = GetComponent<CharacterController>();
         if(lockCursor)
@@ -30,6 +34,7 @@ public class BeanMovement : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }
+        doubleJumpNum = 2;
     }
 
     void Update() {
@@ -56,18 +61,22 @@ public class BeanMovement : MonoBehaviour
 
         currentDir = Vector2.SmoothDamp(currentDir, targetDir, ref currentDirVelocity, moveSmoothTime);
 
-        if(controller.isGrounded)
-            velocityY = 0.0f;
-
+        if(controller.isGrounded) {
+            doubleJumpNum = 2;
+        }   
         if(Input.GetKey(KeyCode.LeftShift)) {
             sprintingMultiplier++;
-            Debug.Log("yes");
         }
 
-        velocityY += gravity * Time.deltaTime;
-		
         Vector3 velocity = (transform.forward * currentDir.y + transform.right * currentDir.x) * walkSpeed + Vector3.up * velocityY;
-
         controller.Move(velocity * sprintingMultiplier * Time.deltaTime);
+
+        if (Input.GetButtonDown("Jump") && (controller.isGrounded || doubleJumpNum > 0))
+        {
+            playerVelocity.y += Mathf.Sqrt(jumpForce * -3.0f * gravityValue);
+            doubleJumpNum--;
+        }
+        playerVelocity.y += gravityValue * Time.deltaTime;
+        controller.Move(playerVelocity * Time.deltaTime);
     }
 }

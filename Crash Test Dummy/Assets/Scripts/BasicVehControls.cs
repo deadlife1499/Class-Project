@@ -50,32 +50,19 @@ public class BasicVehControls : MonoBehaviour {
     public GameObject rearRightMesh;
     public WheelCollider rearRightCollider;
 
-    [Header("EFFECTS")]
-    [Space(10)]
-
-    public bool useEffects = false;
-    public ParticleSystem RLWParticleSystem;
-    public ParticleSystem RRWParticleSystem;
-
-    [Space(10)]
-    public TrailRenderer RLWTireSkid;
-    public TrailRenderer RRWTireSkid;
-	
     [Header("Sounds")]
     [Space(10)]
 
     public bool useSounds = false;
     public AudioSource carEngineSound;
-    public AudioSource tireScreechSound;
     float initialCarEngineSoundPitch;
-
-	public float carSpeed;
 
 	Rigidbody rb;
     float steeringAxis;
     float throttleAxis;
     float localVelocityZ;
     bool deceleratingCar;
+	public float carSpeed;
 
 	void Start() {
 		rb = gameObject.GetComponent<Rigidbody>();
@@ -92,9 +79,6 @@ public class BasicVehControls : MonoBehaviour {
 		else if(!useSounds){
           	if(carEngineSound != null){
             	carEngineSound.Stop();
-          	}
-          	if(tireScreechSound != null){
-            	tireScreechSound.Stop();
           	}
         }
 	}
@@ -157,7 +141,7 @@ public class BasicVehControls : MonoBehaviour {
             	float engineSoundPitch = initialCarEngineSoundPitch + (Mathf.Abs(rb.velocity.magnitude) / 25f);
             	carEngineSound.pitch = engineSoundPitch;
           	}
-      	}else if(!useSounds){
+      	}else if(!useSounds) {
         	if(carEngineSound != null && carEngineSound.isPlaying){
           		carEngineSound.Stop();
         	}
