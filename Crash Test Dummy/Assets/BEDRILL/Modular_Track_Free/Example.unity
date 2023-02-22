@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7791,7 +7791,31 @@ MonoBehaviour:
   moveSmoothTime: 0.3
   mouseSmoothTime: 0.03
   lockCursor: 1
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  jumpForce: 10
+=======
   jumpForce: 2
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  jumpForce: 2
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  jumpForce: 2
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  jumpForce: 2
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  jumpForce: 2
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  jumpForce: 2
+>>>>>>> parent of eb8d5dc (grtgreg)
   gravityValue: -9.81
 --- !u!1001 &382524628
 PrefabInstance:
@@ -14060,7 +14084,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1212370374}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  m_LocalPosition: {x: -2.14, y: 2.24, z: 0}
+=======
   m_LocalPosition: {x: 0.06, y: 2.24, z: 0}
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_LocalPosition: {x: 0.06, y: 2.24, z: 0}
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_LocalPosition: {x: 0.06, y: 2.24, z: 0}
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_LocalPosition: {x: 0.06, y: 2.24, z: 0}
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_LocalPosition: {x: 0.06, y: 2.24, z: 0}
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_LocalPosition: {x: 0.06, y: 2.24, z: 0}
+>>>>>>> parent of eb8d5dc (grtgreg)
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25159,6 +25207,115 @@ PrefabInstance:
 --- !u!33 &200551915623333882
 MeshFilter:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3250471497286448208, guid: 59a8f7c85fa98d4489a21bb8da9d7302, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250471497286448208, guid: 59a8f7c85fa98d4489a21bb8da9d7302, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.052047
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250471497286448208, guid: 59a8f7c85fa98d4489a21bb8da9d7302, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250471497286448208, guid: 59a8f7c85fa98d4489a21bb8da9d7302, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 15.21038
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250471497286448208, guid: 59a8f7c85fa98d4489a21bb8da9d7302, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250471497286448208, guid: 59a8f7c85fa98d4489a21bb8da9d7302, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250471497286448208, guid: 59a8f7c85fa98d4489a21bb8da9d7302, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250471497286448208, guid: 59a8f7c85fa98d4489a21bb8da9d7302, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250471497286448208, guid: 59a8f7c85fa98d4489a21bb8da9d7302, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250471497286448208, guid: 59a8f7c85fa98d4489a21bb8da9d7302, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250471497286448208, guid: 59a8f7c85fa98d4489a21bb8da9d7302, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250471497286674864, guid: 59a8f7c85fa98d4489a21bb8da9d7302, type: 3}
+      propertyPath: m_Name
+      value: BasicMotionsDummy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250471497286674871, guid: 59a8f7c85fa98d4489a21bb8da9d7302, type: 3}
+      propertyPath: carCamera
+      value: 
+      objectReference: {fileID: 2121750344}
+    - target: {fileID: 3250471497286674871, guid: 59a8f7c85fa98d4489a21bb8da9d7302, type: 3}
+      propertyPath: enterText
+      value: 
+      objectReference: {fileID: 1164194959}
+    - target: {fileID: 3250471497286674871, guid: 59a8f7c85fa98d4489a21bb8da9d7302, type: 3}
+      propertyPath: currentCar
+      value: 
+      objectReference: {fileID: 8746713010994949812}
+    - target: {fileID: 3250471497286674871, guid: 59a8f7c85fa98d4489a21bb8da9d7302, type: 3}
+      propertyPath: carListener
+      value: 
+      objectReference: {fileID: 2121750343}
+    - target: {fileID: 3250471497286674871, guid: 59a8f7c85fa98d4489a21bb8da9d7302, type: 3}
+      propertyPath: playerExitLoc
+      value: 
+      objectReference: {fileID: 1212370375}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 59a8f7c85fa98d4489a21bb8da9d7302, type: 3}
+=======
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -25399,14 +25556,149 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7629913129926014577}
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalRotation: {x: 0.0060243644, y: -0.0018614233, z: -0.00073131965, w: 0.99997985}
   m_LocalPosition: {x: 2.910383e-11, y: 0.67219144, z: 0.00027132037}
+=======
+  m_LocalRotation: {x: 0.00000008146035, y: -0.000000119209275, z: 3.5527133e-15, w: 1}
+  m_LocalPosition: {x: 0, y: 0.67219144, z: 0.00027132037}
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_LocalRotation: {x: 0.00000008146035, y: -0.000000119209275, z: 3.5527133e-15, w: 1}
+  m_LocalPosition: {x: 0, y: 0.67219144, z: 0.00027132037}
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_LocalRotation: {x: 0.00000008146035, y: -0.000000119209275, z: 3.5527133e-15, w: 1}
+  m_LocalPosition: {x: 0, y: 0.67219144, z: 0.00027132037}
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_LocalRotation: {x: 0.00000008146035, y: -0.000000119209275, z: 3.5527133e-15, w: 1}
+  m_LocalPosition: {x: 0, y: 0.67219144, z: 0.00027132037}
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_LocalRotation: {x: 0.00000008146035, y: -0.000000119209275, z: 3.5527133e-15, w: 1}
+  m_LocalPosition: {x: 0, y: 0.67219144, z: 0.00027132037}
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_LocalRotation: {x: 0.00000008146035, y: -0.000000119209275, z: 3.5527133e-15, w: 1}
+  m_LocalPosition: {x: 0, y: 0.67219144, z: 0.00027132037}
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_LocalRotation: {x: 0.00000008146035, y: -0.000000119209275, z: 3.5527133e-15, w: 1}
+  m_LocalPosition: {x: 0, y: 0.67219144, z: 0.00027132037}
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_LocalRotation: {x: 0.00000008146035, y: -0.000000119209275, z: 3.5527133e-15, w: 1}
+  m_LocalPosition: {x: 0, y: 0.67219144, z: 0.00027132037}
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_LocalRotation: {x: 0.00000008146035, y: -0.000000119209275, z: 3.5527133e-15, w: 1}
+  m_LocalPosition: {x: 0, y: 0.67219144, z: 0.00027132037}
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_LocalRotation: {x: 0.00000008146035, y: -0.000000119209275, z: 3.5527133e-15, w: 1}
+  m_LocalPosition: {x: 0, y: 0.67219144, z: 0.00027132037}
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_LocalRotation: {x: 0.00000008146035, y: -0.000000119209275, z: 3.5527133e-15, w: 1}
+  m_LocalPosition: {x: 0, y: 0.67219144, z: 0.00027132037}
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_LocalRotation: {x: 0.00000008146035, y: -0.000000119209275, z: 3.5527133e-15, w: 1}
+  m_LocalPosition: {x: 0, y: 0.67219144, z: 0.00027132037}
+>>>>>>> parent of 7721109 (car elevator)
+=======
+  m_LocalRotation: {x: 0.00000008146035, y: -0.000000119209275, z: 3.5527133e-15, w: 1}
+  m_LocalPosition: {x: 0, y: 0.67219144, z: 0.00027132037}
+>>>>>>> parent of 7721109 (car elevator)
+=======
+  m_LocalRotation: {x: 0.00000008146035, y: -0.000000119209275, z: 3.5527133e-15, w: 1}
+  m_LocalPosition: {x: 0, y: 0.67219144, z: 0.00027132037}
+>>>>>>> parent of 7721109 (car elevator)
+=======
+  m_LocalRotation: {x: 0.00000008146035, y: -0.000000119209275, z: 3.5527133e-15, w: 1}
+  m_LocalPosition: {x: 0, y: 0.67219144, z: 0.00027132037}
+>>>>>>> parent of 7721109 (car elevator)
   m_LocalScale: {x: 150, y: 150, z: 150}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1853141937}
   m_RootOrder: 2
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalEulerAnglesHint: {x: 0.69, y: -0.214, z: -0.085}
+=======
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of 7721109 (car elevator)
+=======
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of 7721109 (car elevator)
+=======
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of 7721109 (car elevator)
+=======
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of 7721109 (car elevator)
 --- !u!1 &678112715803194558
 GameObject:
   m_ObjectHideFlags: 0
@@ -26256,6 +26548,40 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8664527004243860185}
   m_Mesh: {fileID: 1017819258238957403, guid: 07080858bcac78d42b8f39d42168c7c2, type: 3}
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 772110983b57e1525c9edb8c985cacca2c25a2e1
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
+=======
+>>>>>>> parent of eb8d5dc (grtgreg)
 --- !u!1001 &2620777679950359739
 PrefabInstance:
   m_ObjectHideFlags: 0
