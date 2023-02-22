@@ -7,11 +7,22 @@ public class helmetcontroller : MonoBehaviour
     public GameObject HelmetLoPoly;
     public float amp;
     public float rotate;
-    void Start(){  }
+    float positionX;
+    float positionY;
+    float positionZ;
+    void Start(){  
+        positionX = transform.position.x;
+        positionY = transform.position.y;
+        positionZ = transform.position.z;
+
+
+
+    }
+
 
     void Update()
     {
-        HelmetLoPoly.transform.position = new Vector3(0, Mathf.Sin(Time.time) * amp, 0);
+        HelmetLoPoly.transform.position = new Vector3(0+positionX, positionY + Mathf.Sin(Time.time) * amp, 0 + positionZ);
         HelmetLoPoly.transform.Rotate(new Vector3(0, 20, 0) * Time.deltaTime);
 
     }
