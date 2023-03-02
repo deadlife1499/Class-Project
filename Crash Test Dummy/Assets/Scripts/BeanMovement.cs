@@ -81,7 +81,6 @@ public class BeanMovement : MonoBehaviour
         if(playerVelocity.y < 0 && controller.isGrounded) {
             playerVelocity.y = 0;
         }
-        Debug.Log(playerVelocity);
         controller.Move(playerVelocity * Time.deltaTime);
     }
 }
